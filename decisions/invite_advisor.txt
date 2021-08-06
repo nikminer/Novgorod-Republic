@@ -1,0 +1,19 @@
+country_decisions = {
+	invite_advisor = {
+		potential = {
+			tag = NOV
+			government = republic
+		}
+		allow = {
+			treasury = 100
+			not = {
+				has_country_modifier = invited_advisor
+			}
+		}
+		effect = {
+			country_event = {
+				id = invite_advisor.1
+			}
+		}
+	}
+}

@@ -1,0 +1,270 @@
+country_decisions = {
+
+	declarate_dictatorship ={
+		major = yes
+		potential = {
+			tag = NOV
+			government = republic
+		}
+
+		allow = {
+			stability = 3
+			faction_in_power = mr_aristocrats
+			or = {
+				mil = 5
+				adm = 5
+				dip = 5
+			}
+		}
+
+		effect = {
+			add_republican_tradition = -30
+			add_stability = -5
+			add_government_reform = republican_dictatorship
+		}
+	}
+
+	establish_russian_republic = {
+		potential = {
+			tag = NOV
+			government = republic
+			culture_group = east_slavic
+			NOT = { tag = POL }
+			NOT = { tag = RUS }
+			OR = {
+				NOT = { exists = RUS }
+				ai = no
+			}
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			OR = {
+				primary_culture = russian
+				primary_culture = novgorodian
+				primary_culture = ryazanian
+			}
+			NOT = { has_country_flag = formed_russia_flag }
+		}
+		major = yes
+		provinces_to_highlight = {
+			OR = {
+				province_id = 295	
+				province_id = 310
+				AND = {
+					province_id = 294
+					ROOT = { NOT = { owns_core_province = 308 } }
+				}
+				AND = {
+					province_id = 308
+					ROOT = { NOT = { owns_core_province = 294 } }
+				}
+				AND = {
+					province_id = 301
+					ROOT = { NOT = { owns_core_province = 293 } }
+				}
+				AND = {
+					province_id = 293
+					ROOT = { NOT = { owns_core_province = 301 } }
+				}
+				AND = {
+					province_id = 306
+					ROOT = { NOT = { owns_core_province = 307 } }
+				}
+				AND = {
+					province_id = 307
+					ROOT = { NOT = { owns_core_province = 306 } }
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+
+		allow = {
+			NOT = { exists = RUS }
+			NOT = { has_reform = states_general_reform }
+			government = republic
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			has_mission = nov_conquer_princes
+			owns_core_province = 295
+			owns_core_province = 310
+			OR = {
+				owns_core_province = 294
+				owns_core_province = 308			
+			}
+			OR = {
+				owns_core_province = 301
+				owns_core_province = 293
+			}
+			OR = {
+				owns_core_province = 306
+				owns_core_province = 307
+			}
+		}
+
+		effect = {
+			change_tag = RUR
+			swap_non_generic_missions = yes
+			RUR = { 
+				set_government_rank = 3 
+				change_government = rus_republic
+				add_government_reform = russian_republic
+			}
+			
+			
+			add_prestige = 25
+			
+			set_country_flag = formed_russia_flag
+			russia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUR
+			}
+			crimea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUR
+			}
+			ural_region = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+					is_empty = no
+				}
+				add_permanent_claim = RUR
+			}
+
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { 
+					id = ideagroups.1 
+				}
+			}
+			country_event = { 
+				id = creating_parliament.1 
+			}
+		}
+		
+	}
+
+	invite_officers = {
+		potential = {
+			tag = NOV
+			government = republic
+			not = {
+				or = {
+					has_country_modifier = invited_experts_mil
+					has_country_modifier = invited_experts_adm
+					has_country_modifier = invited_experts_dip
+				}
+			}
+		}
+		allow = {
+			faction_in_power = mr_aristocrats
+			treasury = 100
+			any_neighbor_country = {
+				tech_difference = 1
+			} 
+		}
+		effect = {
+			add_treasury = -100
+			add_mil_power = 200
+			add_country_modifier = {
+				name = invited_experts_mil
+				duration = 365
+			}
+		}
+	}
+
+	invite_eldermans = {
+		potential = {
+			tag = NOV
+			government = republic
+			not = {
+				or = {
+					has_country_modifier = invited_experts_mil
+					has_country_modifier = invited_experts_adm
+					has_country_modifier = invited_experts_dip
+				}
+			}
+		}
+		allow = {
+			faction_in_power = mr_guilds
+			treasury = 100
+			any_neighbor_country = {
+				tech_difference = 1
+			}
+		}
+		effect = {
+			add_treasury = -100
+			add_adm_power = 200
+			add_country_modifier = {
+				name = invited_experts_adm
+				duration = 365
+			}
+		}
+	}
+
+	invite_merchants ={
+		potential = {
+			tag = NOV
+			government = republic
+			not = {
+				or = {
+					has_country_modifier = invited_experts_mil
+					has_country_modifier = invited_experts_adm
+					has_country_modifier = invited_experts_dip
+				}
+			}
+		}
+		allow = {
+			faction_in_power = mr_traders
+			treasury = 100
+			any_neighbor_country = {
+				tech_difference = 1
+			}
+		}
+		effect = {
+			add_treasury = -100
+			add_dip_power = 200
+			add_country_modifier = {
+				name = invited_experts_dip
+				duration = 365
+			}
+		}
+	}
+
+	invite_knyze = {
+		potential = {
+			tag = NOV
+			government = republic
+		}
+
+		allow = {
+			mil_power = 100
+			NOT={
+				has_country_modifier = invited_knyaz
+			}
+		}
+
+		effect = {
+			add_mil_power = -100
+			create_general = {
+				tradition = 50
+				culture = novgorodian
+			}
+			add_republican_tradition = -10
+			add_country_modifier = {
+				name = invited_knyaz
+				duration = 7300
+			}
+		}
+	}
+}

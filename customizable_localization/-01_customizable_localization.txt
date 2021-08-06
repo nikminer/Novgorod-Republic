@@ -1,0 +1,25 @@
+defined_text = {
+	name = GetParliamentWithGrammarCap
+	random = no
+
+	text = {
+		localisation_key = this_parliament
+		trigger = {
+			NOT = {
+				OR = {
+					tag = RUR
+					tag = NOV
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = this_the_parliament_cap
+		trigger = {
+			OR = {
+				tag = RUR
+				tag = NOV
+			}
+		}
+	}
+}

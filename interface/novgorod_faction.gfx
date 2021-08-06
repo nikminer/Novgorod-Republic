@@ -1,0 +1,40 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_faction_nov_cossacks"	
+		texturefile = "gfx//interface//cossacks_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_nov_cossacks"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_faction_nov_conservo"	
+		texturefile = "gfx//interface//conservo_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_nov_conservo"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_nov_liberal"	
+		texturefile = "gfx//interface//liberal_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_nov_liberal"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_faction_nov_reaction"	
+		texturefile = "gfx//interface//reactioner_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_nov_reaction"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+}

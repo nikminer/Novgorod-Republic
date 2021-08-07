@@ -32,7 +32,7 @@ RUR_ideas = {
 
 	abolish_the_mestnichestvo = {
 		yearly_corruption = -0.1
-		republican_tradition = 0.1
+		republican_tradition = 1
 	}
 	table_of_ranks = {
 		advisor_cost = -0.10

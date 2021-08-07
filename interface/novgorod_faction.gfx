@@ -40,6 +40,26 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_faction_nov_strong_aristocrats"	
+		texturefile = "gfx//interface//strong_aristocrats_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_nov_strong_aristocrats"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_faction_nov_enligment_aristocrats"	
+		texturefile = "gfx//interface//enligment_aristocrats_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_nov_enligment_aristocrats"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
 		name = "GFX_faction_nov_conservo"	
 		texturefile = "gfx//interface//conservo_icon.tga"
 	}

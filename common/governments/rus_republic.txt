@@ -44,11 +44,7 @@ rus_republic = {
 				penal_colonies_reform
 			}
 		}
-		parliamentary_vs_presidential = {
-			reforms = {
-				presidential_reform
-			}
-		}
+		
 		consolidation_of_power_category = {
 			reforms = {
 				broaden_executive_powers_reform
@@ -66,11 +62,17 @@ rus_republic = {
 				imperial_principle_reform
 			}
 		}
+		question_of_aristocrats = {
+			reforms = {
+				nov_enligment_aristocrats_reform
+				nov_strong_aristocrats_reform
+				nov_destroy_aristocrats
+			}
+		}
 		electorate = {
 			reforms = {
 				landholders_reform
 				citizenry_reform
-				admiralty_reform
 				equal_electorate_reform
 				three_classes_reform
 				military_electorate_reform
@@ -93,6 +95,11 @@ rus_republic = {
 				president_for_life_reform
 				government_for_people_reform
 				become_rev_empire_reform
+			}
+		}
+		new_political_streams = {
+			reforms = {
+				nov_new_political_streams
 			}
 		}
     }

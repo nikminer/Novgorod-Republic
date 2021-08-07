@@ -10,6 +10,36 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_faction_nov_tradecompany"	
+		texturefile = "gfx//interface//tradercompany_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_nov_tradecompany"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_faction_nov_manufacturing"	
+		texturefile = "gfx//interface//manufacturing_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_nov_manufacturing"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_faction_nov_capitalist"	
+		texturefile = "gfx//interface//capitalists_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_nov_capitalist"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
 		name = "GFX_faction_nov_conservo"	
 		texturefile = "gfx//interface//conservo_icon.tga"
 	}
@@ -27,7 +57,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//faction_blue_frame.tga"
 		transparencecheck = yes
 	}
-
 	spriteType = {
 		name = "GFX_faction_nov_reaction"	
 		texturefile = "gfx//interface//reactioner_icon.tga"

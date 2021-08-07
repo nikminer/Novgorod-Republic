@@ -316,6 +316,7 @@ country_event = {
 	}
 }
 
+#New Political Factions
 country_event = {
 	id = creating_parliament.4
 	title = creating_parliament.4t
@@ -324,13 +325,12 @@ country_event = {
 	
 	trigger = {
 		is_institution_enabled = enlightenment
-		
 		or = {
 			has_faction = mr_aristocrats
 			has_faction = mr_guilds
 			has_faction = mr_traders
 		}
-
+		is_year = 1810
 		culture_group = east_slavic
 		tag = RUR
 	}
@@ -365,9 +365,137 @@ country_event = {
 				}
 				remove_faction = nov_cossacks
 			}
+
+			if = {
+				limit = {
+					has_faction = nov_tradecompany
+				}
+				remove_faction = nov_tradecompany
+			}
+
+			if = {
+				limit = {
+					has_faction = nov_capitalist
+				}
+				remove_faction = nov_capitalist
+			}
+			if = {
+				limit = {
+					has_faction = nov_manufacturing
+				}
+				remove_faction = nov_manufacturing
+			}
+			if = {
+				limit = {
+					has_faction = nov_enligment_aristocrats
+				}
+				remove_faction = nov_enligment_aristocrats
+			}
+			if = {
+				limit = {
+					has_faction = nov_strong_aristocrats
+				}
+				remove_faction = nov_strong_aristocrats
+			}
 		}
 		add_faction = nov_conservo
 		add_faction = nov_liberal
 		add_faction = nov_reaction
+	}
+}
+
+country_event = {
+	id = creating_parliament.5
+	title = creating_parliament.5t
+	desc = creating_parliament.5d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		is_institution_enabled = global_trade
+		culture_group = east_slavic
+		tag = RUR
+		not = {
+			has_faction = nov_tradecompany
+		}
+		has_faction = mr_traders
+	}
+
+	option = {
+		name = creating_parliament.a4
+		hidden_effect = {
+			
+			if = {
+				limit = {
+					has_faction = mr_traders  
+				}
+				remove_faction = mr_traders  
+			}
+		}
+		add_faction = nov_tradecompany
+	}
+}
+
+country_event = {
+	id = creating_parliament.6
+	title = creating_parliament.5t
+	desc = creating_parliament.6d
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	trigger = {
+		is_institution_enabled = manufactories		
+		culture_group = east_slavic
+		tag = RUR
+		not = {
+			has_faction = nov_manufacturing
+		}
+		has_faction = mr_guilds
+	}
+
+	option = {
+		name = creating_parliament.a4
+		hidden_effect = {
+			if = {
+				limit = {
+					has_faction = mr_guilds  
+				}
+				remove_faction = mr_guilds  
+			}
+		}
+		add_faction = nov_manufacturing
+	}
+}
+
+country_event = {
+	id = creating_parliament.7
+	title = creating_parliament.5t
+	desc = creating_parliament.7d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		is_institution_enabled = industrialization		
+		culture_group = east_slavic
+		tag = RUR
+		not = {
+			has_faction = nov_capitalist
+		}
+	}
+
+	option = {
+		name = creating_parliament.a4
+		hidden_effect = {
+			if = {
+				limit = {
+					has_faction = mr_guilds  
+				}
+				remove_faction  = mr_guilds  
+			}
+			if = {
+				limit = {
+					has_faction = nov_manufacturing  
+				}
+				remove_faction  = nov_manufacturing  
+			}
+		}
+		add_faction = nov_capitalist
 	}
 }

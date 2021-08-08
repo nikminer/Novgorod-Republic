@@ -256,9 +256,9 @@ rostov_kremlin = {
 	move_days_per_unit_distance = 1
 
 	date = 1670.01.01
-	build_cost = 0
+	build_cost = 500
 	time = {
-		months = 0
+		months = 60
 	}
 
 	type = monument
@@ -390,9 +390,9 @@ astrakhan_kremlin = {
 	move_days_per_unit_distance = 1
 
 	date = 1562.01.01
-	build_cost = 0
+	build_cost = 500
 	time = {
-		months = 0
+		months = 60
 	}
 
 	type = monument
@@ -524,9 +524,9 @@ tobol_kremlin = {
 	move_days_per_unit_distance = 1
 
 	date = 1683.01.01
-	build_cost = 0
+	build_cost = 500
 	time = {
-		months = 0
+		months = 60
 	}
 
 	type = monument
@@ -659,9 +659,9 @@ nizhny_kremlin = {
 	move_days_per_unit_distance = 1
 
 	date = 1508.01.01
-	build_cost = 0
+	build_cost = 500
 	time = {
-		months = 0
+		months = 60
 	}
 
 	type = monument
@@ -692,10 +692,10 @@ nizhny_kremlin = {
 
 	tier_0 = {
 		upgrade_time = {
-			months = 0
+			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 0
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -928,9 +928,9 @@ tula_kremlin = {
 	move_days_per_unit_distance = 1
 
 	date = 1514.01.01
-	build_cost = 0
+	build_cost = 500
 	time = {
-		months = 0
+		months = 60
 	}
 
 	type = monument
@@ -1063,9 +1063,9 @@ kazan_kremlin = {
 	move_days_per_unit_distance = 1
 
 	date = 1672.01.01
-	build_cost = 0
+	build_cost = 500
 	time = {
-		months = 0
+		months = 60
 	}
 
 	type = monument

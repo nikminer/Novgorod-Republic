@@ -1,29 +1,4 @@
 country_decisions = {
-
-	declarate_dictatorship ={
-		major = yes
-		potential = {
-			tag = NOV
-			government = republic
-		}
-
-		allow = {
-			stability = 3
-			faction_in_power = mr_aristocrats
-			or = {
-				mil = 5
-				adm = 5
-				dip = 5
-			}
-		}
-
-		effect = {
-			add_republican_tradition = -30
-			add_stability = -5
-			add_government_reform = republican_dictatorship
-		}
-	}
-
 	establish_russian_republic = {
 		potential = {
 			tag = NOV
@@ -156,8 +131,16 @@ country_decisions = {
 
 	invite_officers = {
 		potential = {
-			tag = NOV
-			government = republic
+			or = {
+				tag = NOV
+				government = rus_republic
+			}
+			or = {
+				has_faction = mr_aristocrats
+				has_faction = nov_enligment_aristocrats
+				has_faction = nov_strong_aristocrats
+				has_reform  = nov_destroy_aristocrats
+			}
 			not = {
 				or = {
 					has_country_modifier = invited_experts_mil
@@ -167,7 +150,11 @@ country_decisions = {
 			}
 		}
 		allow = {
-			faction_in_power = mr_aristocrats
+			or = {
+				faction_in_power = mr_aristocrats
+				faction_in_power = nov_enligment_aristocrats
+				faction_in_power = nov_strong_aristocrats
+			}
 			treasury = 100
 			any_neighbor_country = {
 				tech_difference = 1
@@ -185,8 +172,15 @@ country_decisions = {
 
 	invite_eldermans = {
 		potential = {
-			tag = NOV
-			government = republic
+			or = {
+				tag = NOV
+				government = rus_republic
+			}
+			or = {
+				has_faction = mr_guilds
+				has_faction = nov_capitalist
+				has_faction = nov_manufacturing
+			}
 			not = {
 				or = {
 					has_country_modifier = invited_experts_mil
@@ -196,7 +190,11 @@ country_decisions = {
 			}
 		}
 		allow = {
-			faction_in_power = mr_guilds
+			or = {
+				faction_in_power = mr_guilds
+				faction_in_power = nov_capitalist
+				faction_in_power = nov_manufacturing
+			}
 			treasury = 100
 			any_neighbor_country = {
 				tech_difference = 1
@@ -214,8 +212,14 @@ country_decisions = {
 
 	invite_merchants ={
 		potential = {
-			tag = NOV
-			government = republic
+			or = {
+				tag = NOV
+				government = rus_republic
+			}
+			or = {
+				has_faction = mr_traders
+				has_faction = nov_tradecompany
+			}
 			not = {
 				or = {
 					has_country_modifier = invited_experts_mil
@@ -225,7 +229,10 @@ country_decisions = {
 			}
 		}
 		allow = {
-			faction_in_power = mr_traders
+			or = {
+				faction_in_power = mr_traders
+				faction_in_power = nov_tradecompany
+			}
 			treasury = 100
 			any_neighbor_country = {
 				tech_difference = 1
@@ -243,8 +250,13 @@ country_decisions = {
 
 	invite_knyze = {
 		potential = {
-			tag = NOV
-			government = republic
+			or = {
+				tag = NOV
+				government = rus_republic
+			}
+			not = {
+				has_reform = nov_destroy_aristocrats
+			}
 		}
 
 		allow = {

@@ -1,8 +1,10 @@
 country_decisions = {
 	invite_advisor = {
 		potential = {
-			tag = NOV
-			government = republic
+			or = {
+				tag = NOV
+				government = rus_republic
+			}
 		}
 		allow = {
 			treasury = 100

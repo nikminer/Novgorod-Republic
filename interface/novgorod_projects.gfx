@@ -3,4 +3,36 @@ spriteTypes = {
 		name = "GFX_great_project_five_ends"
 		texturefile = "gfx//interface//great_projects//great_project_the_five_ends.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_pskov_korm"
+		texturefile = "gfx//interface//great_projects//pskov_korm.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_rostov_kremlin"
+		texturefile = "gfx//interface//great_projects//rostov_kremlin.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_astrakhan_kremlin"
+		texturefile = "gfx//interface//great_projects//astrakhan_kremlin.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_tobol_kremlin"
+		texturefile = "gfx//interface//great_projects//tobol_kremlin.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_nizhny_kremlin"
+		texturefile = "gfx//interface//great_projects//nizhny_kremlin.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_ryazan_kremlin"
+		texturefile = "gfx//interface//great_projects//ryazan_kremlin.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_tula_kremlin"
+		texturefile = "gfx//interface//great_projects//tula_kremlin.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_kazan_kremlin"
+		texturefile = "gfx//interface//great_projects//kazan_kremlin.dds"
+	}
 }

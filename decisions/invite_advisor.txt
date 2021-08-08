@@ -18,4 +18,19 @@ country_decisions = {
 			}
 		}
 	}
+
+	destroy_republic = {
+		potential = {
+			or = {
+				tag = NOV
+				government = rus_republic
+			}
+		}
+		allow = {
+		
+		}
+		effect = {
+			add_republican_tradition = -15
+		}
+	}
 }

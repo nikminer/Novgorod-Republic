@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "veche_eventPicture"
+		texturefile = "gfx/event_pictures/LIBERUM_VETO_eventPicture.dds"
+		alwaystransparent = yes
+	}
+}

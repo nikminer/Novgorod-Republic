@@ -266,7 +266,7 @@ country_event = {
 	id = creating_parliament.2
 	title = creating_parliament.2t
 	desc = creating_parliament.2d
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = easterngfx_DEBATE_REPUBLICAN_eventPicture
 	
 	trigger = {
 		any_owned_province = {
@@ -296,7 +296,7 @@ country_event = {
 	id = creating_parliament.3
 	title = creating_parliament.3t
 	desc = creating_parliament.3d
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = easterngfx_DEBATE_REPUBLICAN_eventPicture
 	
 	trigger = {
 		not = {
@@ -324,7 +324,7 @@ country_event = {
 	id = creating_parliament.4
 	title = creating_parliament.4t
 	desc = creating_parliament.4d
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = easterngfx_DEBATE_REPUBLICAN_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -344,7 +344,7 @@ country_event = {
 	id = creating_parliament.5
 	title = creating_parliament.5t
 	desc = creating_parliament.5d
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = TRADEGOODS_eventPicture
 	
 	trigger = {
 		is_institution_enabled = global_trade
@@ -379,7 +379,7 @@ country_event = {
 	id = creating_parliament.6
 	title = creating_parliament.5t
 	desc = creating_parliament.6d
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = INVENTION_eventPicture
 
 	trigger = {
 		is_institution_enabled = manufactories		
@@ -413,7 +413,7 @@ country_event = {
 	id = creating_parliament.7
 	title = creating_parliament.5t
 	desc = creating_parliament.7d
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = INVENTION_eventPicture
 	
 	trigger = {
 		is_institution_enabled = industrialization		

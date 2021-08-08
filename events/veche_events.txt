@@ -1,0 +1,121 @@
+namespace = veche
+
+country_event = {
+	id = veche.1
+	title = veche.1t
+	desc = veche.1d
+	picture = veche_eventPicture
+	
+	trigger = {
+		or = {
+			tag = NOV
+			tag = RUR
+		}
+		not = {
+			republican_tradition = 20
+			has_country_flag = destroyed_republic
+		}
+	}
+
+	option = {
+		name = veche.a1
+		random_list  = {
+			50 = {
+				kill_ruler = yes
+				add_stability = -2
+			}
+			50 = {
+				
+			}
+		}
+		add_republican_tradition = 20
+	}
+	
+	option = {
+		name = veche.b1
+		add_republican_tradition = 20
+		define_ruler = {
+			max_random_adm =  6
+			max_random_dip =  6
+			max_random_mil =  6
+			claim = 50
+			culture = ROOT
+			religion = ROOT
+			min_age = 30
+			max_age = 60
+			hide_skills = yes
+		}
+	}
+	option = {
+		name = veche.c1
+		add_stability = -2
+		if = {
+			limit = {
+				owns_core_province = 310
+			}
+			310 = {
+				veche_rebels = 2
+			}
+		}
+		if = {
+			limit = {
+				owns_core_province = 295
+			}
+			295 = {
+				veche_rebels = 2
+			}
+		}
+		if = {
+			limit = {
+				owns_core_province = 294
+			}
+			294 = {
+				veche_rebels = 2
+			}
+		}
+		if = {
+			limit = {
+				owns_core_province = 293
+			}
+			293 = {
+				veche_rebels = 2
+			}
+		}
+		if = {
+			limit = {
+				owns_core_province = 308
+			}
+			308 = {
+				veche_rebels = 2
+			}
+		}
+		if = {
+			limit = {
+				owns_core_province = 301
+			}
+			301 = {
+				veche_rebels = 2
+			}
+		}
+		
+		if = {
+			limit = {
+				owns_core_province = 306
+			}
+			306 = {
+				veche_rebels = 2
+			}
+		}
+
+		if = {
+			limit = {
+				owns_core_province = 307
+			}
+			307 = {
+				veche_rebels = 2
+			}
+		}
+
+		set_country_flag = destroyed_republic
+	}
+}

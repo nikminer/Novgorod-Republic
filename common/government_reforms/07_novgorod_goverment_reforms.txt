@@ -259,6 +259,11 @@ nov_destroy_aristocrats = {
 	trigger = {
 		NOT = {
 			has_reform = nepotism_reform 
+			or = {
+				faction_in_power = mr_aristocrats
+				faction_in_power = nov_enligment_aristocrats
+				faction_in_power = nov_strong_aristocrats
+			}
 		}
 		is_institution_enabled = enlightenment
 	}

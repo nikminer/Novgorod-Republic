@@ -1,0 +1,343 @@
+rur_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = RUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	invade_west_russia = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+
+		effect = {
+			add_army_tradition = 1
+			#smolensk
+			if = {
+				limit = {
+					4243 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				4243 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					275 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				275 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			smolensk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+
+			#east_dniepr
+			if = {
+				limit = {
+					298 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				298 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					291 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				291 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			chernigov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			east_dniepr_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_smolensk = {
+		icon = mission_cannons_firing
+		position = 2
+		
+		required_missions = {
+			invade_west_russia
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4243
+				province_id = 275
+				area = smolensk_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		trigger = {
+			owns = 4243
+			owns = 275
+			smolensk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_manpower = 10
+			add_army_tradition = 2
+			minsk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			white_ruthenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+
+	conquer_white_ruthenia = {
+		icon = mission_conquer_5_states
+		position = 3
+		
+		required_missions = {
+			conquer_smolensk
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = minsk_area
+				area = white_ruthenia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		trigger = {
+			minsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			white_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_manpower = 10
+			add_army_tradition = 2
+			minsk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			white_ruthenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+}
+
+rur_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = RUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	
+	conquer_east_dniepr = {
+		icon = mission_advance_to_the_dnieper
+		position = 2
+		
+		required_missions = {
+			invade_west_russia
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 298
+				province_id = 291
+				area = chernigov_area
+				area = east_dniepr_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		trigger = {
+			owns = 298
+			owns = 291
+			chernigov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_dniepr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_manpower = 10
+			add_army_tradition = 2
+			west_dniepr_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			if = {
+				limit = {
+					4540 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				4540 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					1943 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				1943 = {
+					add_permanent_claim = ROOT
+				}
+			}
+
+			if = {
+				limit = {
+					282 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				282 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					2406 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				2406 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					283 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				283 = {
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	conquer_west_dniepr = {
+		icon = mission_rule_ruthenia
+		position = 3
+		
+		required_missions = {
+			conquer_east_dniepr
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = west_dniepr_area
+				province_id = 283
+				province_id = 2406
+				province_id = 282
+				province_id = 1943
+				province_id = 4540
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		trigger = {
+			west_dniepr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 283
+			owns = 282
+			owns = 1943
+			owns = 2406
+			owns = 4540
+		}
+		effect = {
+			add_manpower = 10
+			add_army_tradition = 2
+		}
+	}
+}

@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "kremlin_mission"
+		texturefile = "gfx//interface//missions//kremlin.dds"
+	}
+
+	spriteType = {
+		name = "five_ends_mission"
+		texturefile = "gfx//interface//missions//five_ends.dds"
+	}
+	spriteType = {
+		name = "nizhny_kremlin_mission"
+		texturefile = "gfx//interface//missions//nizhny_kremlin.dds"
+	}
+}

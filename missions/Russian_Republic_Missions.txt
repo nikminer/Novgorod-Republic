@@ -199,6 +199,39 @@ rur_2 = {
 	}
 	has_country_shield = yes
 
+	upgrade_five_ends ={
+		icon = five_ends_mission
+		position = 1
+		provinces_to_highlight = {
+			province_id = 310
+		}
+
+		trigger = {
+			310 = {
+				has_great_project = {
+					type = five_ends
+					tier = 3
+				}
+			}
+		}
+
+		effect = {
+			add_republican_tradition = 10
+			add_prestige = 10
+			310 = {
+				if = {
+					limit = {
+						has_province_modifier = five_ends_tire2
+					}
+					remove_province_modifier = five_ends_tire2
+				}
+				add_province_modifier = {
+					name = five_ends_tire3
+					duration = -1
+				}
+			}
+		}
+	}
 	
 	conquer_east_dniepr = {
 		icon = mission_advance_to_the_dnieper
@@ -338,6 +371,530 @@ rur_2 = {
 		effect = {
 			add_manpower = 10
 			add_army_tradition = 2
+		}
+	}
+}
+
+
+rur_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = RUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	upgrade_kremlin ={
+		icon = kremlin_mission
+		position = 1
+		provinces_to_highlight = {
+			province_id = 295
+		}
+
+		trigger = {
+			295 = {
+				has_great_project = {
+					type = kremlin
+					tier = 3
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			295 = {
+				add_province_modifier = {
+					name = kremlin_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+rur_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = RUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	east_fortress ={
+		icon = nizhny_kremlin_mission
+		position = 1
+		provinces_to_highlight = {
+			province_id = 306
+		}
+
+		trigger = {
+			306 = {
+				has_great_project = {
+					type = nizhny_kremlin
+					tier = 1
+				}
+			}
+			army_size_percentage = 1
+		}
+
+		effect = {
+			add_prestige = 10
+			306 = {
+				add_province_modifier = {
+					name = kremlin_modifier
+					duration = -1
+				}
+			}
+
+			kazan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			volga_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			if = {
+				limit = {
+					304 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				304 = {
+					add_permanent_claim = ROOT
+				}
+			}
+
+			if = {
+				limit = {
+					2419 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				2419 = {
+					add_permanent_claim = ROOT
+				}
+			}
+
+			if = {
+				limit = {
+					473 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				473 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					1081 = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				}
+				1081 = {
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	subjugate_kazan = {
+		icon = mission_conquer_50_development
+		required_missions = { east_fortress }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = kazan_area
+				area = volga_area
+				area = kama_area
+				area = samara_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kazan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			volga_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kama_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			samara_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			kazan_area = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			volga_area = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			kama_area = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			samara_area = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			ural_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			west_siberia_region = {
+				limit = {
+					is_empty = no
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	destroy_big_horde = {
+		icon = mission_cossack_cavalry
+		required_missions = { subjugate_kazan }
+
+		provinces_to_highlight = {
+			OR = {
+				area = tambov_area
+				area = lower_don_area
+				area = astrakhan_area
+				area = saratov_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tambov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_don_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			astrakhan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			saratov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			tambov_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			lower_don_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			astrakhan_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			saratov_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			crimea_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			nogai_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_yik_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	subjugate_crimea = {
+		icon = mission_non-western_soldiers
+		required_missions = { destroy_big_horde }
+		provinces_to_highlight = {
+			region = crimea_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			crimea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "controlling_the_steppes"
+				duration = 5475
+			}
+			crimea_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+		}
+	}
+	destroy_horde = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { subjugate_crimea }
+		provinces_to_highlight = {
+			OR = {
+				area = nogai_area
+				area = lower_yik_area
+				AND = {
+					region = ural_region
+					is_empty = no
+				}
+				AND = {
+					region = west_siberia_region
+					is_empty = no
+				}
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			nogai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_yik_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			custom_trigger_tooltip = {
+				tooltip = remaining_steppe_1.tooltip
+				ural_region = {
+					type = all
+					OR = {
+						is_empty = yes
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = remaining_steppe_2.tooltip
+				west_siberia_region = {
+					type = all
+					OR = {
+						is_empty = yes
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "controlling_the_steppes"
+				duration = 5475
+			}
+			ural_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			west_siberia_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			nogai_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+			lower_yik_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
+		}
+	}
+	south_walls = {
+		icon = mission_great_wall
+		required_missions = { destroy_horde }
+		provinces_to_highlight = {
+			OR = {
+				area = dagestan_area
+				area = circassia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			dagestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			dagestan_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = south_walls_modigier
+					duration = -1
+				}
+			}
+			circassia_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = south_walls_modigier
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+rur_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = RUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	upgrade_kremlin ={
+		icon = kremlin_mission
+		position = 1
+		provinces_to_highlight = {
+			province_id = 295
+		}
+
+		trigger = {
+			295 = {
+				has_great_project = {
+					type = kremlin
+					tier = 3
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			295 = {
+				add_province_modifier = {
+					name = kremlin_modifier
+					duration = -1
+				}
+			}
 		}
 	}
 }

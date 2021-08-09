@@ -7,19 +7,17 @@
  develop_karela_desc:0 "Ce¢ep°a÷ Kape®ª÷ ª¯ee² ±poª©¢o¦ª² ¯°o¨ec²¢o ²o¢apo¢, ¬o²opº¯ª ¯º c¯o¨e¯ ¢º¥o¦°o ±po¦a²» ¢ €a®²ª«c¬o¯ pe¥ªo°e, c²oª² pa©¢ª²» ¼²o² pe¥ªo° ¶²o º ³cª®ª²» °a·e ²op¥o¢oe ¢®ª÷°ªe."
  develop_kola_title:0 "Pa©¢ª²» ‰o¯op»e ª Ko®»"
  develop_kola_desc:0 "Ko®»c¬ª« ±o®³oc²po¢ ª pe¥ªo° ‰o¯op»e ¢ºxo¦÷²  epe¥a¯ª °a €e®oe ¯ope, ec®ª ¯º c¬o°µe°²pªp³e¯c÷, °a pa©¢ª²ªe ¼²ªx ±po¢ª°µª«, ²o ª ²op¥o¢a²» ¢ €e®o¯ ¯ope c²a°e² ¼´´e¬²ª¢°ee."
- novgorod_province_development:0 "Pa©¢ª²ªe Ho¢¥opo¦c¬ªx ±po¢ª°µª«"
+ 
  great_novgorod:0 "Be®ª¬ª« Ho¢¥opo¦"
- desc_novgorod_province_development:0 "Mº pa©¢ª®ª ª°´pac²p³²³p³ °a·e« ±po¢ª°µªª."
+ 
  develop_port_neva_title:0 "Pa©¢ª²» ±op² °a He¢e"
  develop_port_neva_desc:0 "‰op² °a He¢e ²pe ³e² ¢®o¨e°ª«, ¶²o º ³cª®ª²» ²op¥o¢®¾ c  a®²ª«c¬ª¯ª ¥oc³¦apc²¢a¯ª."
- trade_develop:0 "Pa©¢ª²a ²op¥o¢®÷"
- desc_trade_develop:0 "Mº pa©¢ª®ª ²op¥o¢³¾ ¼´´e¬²ª¢°oc²» °a·e« ±po¢ª°µªª."
+ 
  return_vyborg_title:0 "Bep°³²» Bº op¥"
  return_vyborg_desc:0 "Mº ¦o®¨°º ¢ep°³²» ©e¯®ª °a ¬o²opºx c²oª² ¬pe±oc²» Bº op¥, ¼²ª ©e¯®ª ¯º ±o²ep÷®ª ¢ 1293 ¥o¦³. ™²a ²eppª²opª÷ ÷¢®÷e²c÷ ¬®¾¶e¢o« ¦®÷ ²op¥o¢®ª ¢  a®²ª«c¬o¯ ¯ope, ¯º ¦o®¨°º ¢ep°³²» ªx, ¶²o º ³cª®ª²» °a·³ ²op¥o¢®¾ °a  a®²ª«c¬o¯ °a±pa¢®e°ªª."
  upgrade_five_ends_title:0 "‹®³¶·ª²» ‰÷²» Ko°µo¢"
  upgrade_five_ends_desc:0 "‰÷²» Ko°µo¢ - ¼²o a¦¯ª°ªc²pa²ª¢°o-²eppª²opªa®»°oe ³c²po«c²¢o Ho¢¥opo¦a, ¢ec» ¥opo¦ ±o¦e®ë° °a ±÷²» pa«o°o¢, ¬a¨¦º« ª© ¬o²opºx ª¯ee² c¢o¾ pa²³·³, o ¸ec²¢e°°³¾ ±e¶a²», c¢o¾ c±eµªa®ª©aµª¾, c¢oë °ace®e°ªe ª c¢oªx ±pe¦c²a¢ª²e®e« ¢ Be¶e."
- five_ends_tire2:0 "‰÷²» Ko°µo¢ ³®³¶·e°º"
- desc_five_ends_tire2:0 ""
+
  develop_port_arkhangelsk_title:0 "Pa©¢ª²» ²op¥o¢®¾ ¢ Apxa°¥e®»c¬e"
  develop_port_arkhangelsk_desc:0 "Top¥o¢®÷ ¢  e®o¯ ¯ope ±pª°ocª² °e±®ox³¾ ±pª º®», ¯º ¦o®¨°º pa©¢ª²» °a· ±op², ¶²o º ¯a¬cª¯ª©ªpo¢a²» °a·³ ±pª º®»."
  conquer_tver_title:0 "…a¢oe¢a²» T¢ep»"

@@ -133,7 +133,7 @@ country_decisions = {
 		potential = {
 			or = {
 				tag = NOV
-				government = rus_republic
+				tag = RUR
 			}
 			or = {
 				has_faction = mr_aristocrats
@@ -174,7 +174,7 @@ country_decisions = {
 		potential = {
 			or = {
 				tag = NOV
-				government = rus_republic
+				tag = RUR
 			}
 			or = {
 				has_faction = mr_guilds
@@ -214,7 +214,7 @@ country_decisions = {
 		potential = {
 			or = {
 				tag = NOV
-				government = rus_republic
+				tag = RUR
 			}
 			or = {
 				has_faction = mr_traders
@@ -252,7 +252,7 @@ country_decisions = {
 		potential = {
 			or = {
 				tag = NOV
-				government = rus_republic
+				tag = RUR
 			}
 			not = {
 				has_reform = nov_destroy_aristocrats

@@ -1,6 +1,12 @@
 on_reform_enacted = {
 	if = {
-		limit = { government = rus_republic }
+		limit = { 
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = russian_republic
+				has_reform = veche_republic
+			}
+		}
 		remove_faction = mr_aristocrats
 		remove_faction = mr_traders
 		remove_faction = mr_guilds
@@ -153,7 +159,13 @@ on_reform_enacted = {
 
 on_reform_changed = {
 	if = {
-		limit = { government = rus_republic }
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = russian_republic
+				has_reform = veche_republic
+			}
+		}
 		remove_faction = mr_aristocrats
 		remove_faction = mr_traders
 		remove_faction = mr_guilds

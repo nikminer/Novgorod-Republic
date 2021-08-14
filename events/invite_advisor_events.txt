@@ -131,6 +131,25 @@ country_event = {
 	}
 
 	option = {
+		name = invite_advisor.adm.enlightener        
+		add_treasury = -100
+		define_advisor = {
+			type = enlightener        
+			skill = 1
+		}
+
+		trigger = {
+			is_institution_enabled = enlightenment
+		}
+
+		add_country_modifier = {
+			name = invited_advisor
+			duration = 1825
+		}
+	}
+
+
+	option = {
 		name = invite_advisor.return    
 		country_event = {
 			id = invite_advisor.1
@@ -338,6 +357,32 @@ country_event = {
 		}
 	}
 
+	option = {
+		name = invite_advisor.mil.knyaz        
+		add_treasury = -100
+		define_advisor = {
+			type = knyaz        
+			skill = 1
+		}
+
+		trigger = {
+			or = {
+				tag = RUR
+				tag = RUS
+				tag = NOV
+				tag = MOS
+				tag = RYA
+				tag = TVE
+				tag = YAR
+			}
+		}
+		
+		add_country_modifier = {
+			name = invited_advisor
+			duration = 1825
+		}
+	}
+	
 	option = {
 		name = invite_advisor.return    
 		country_event = {

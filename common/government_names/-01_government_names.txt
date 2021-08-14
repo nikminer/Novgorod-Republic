@@ -21,8 +21,8 @@ novgorod_republic = {
 
 	trigger = {
 		or = {
-			government = rus_republic
-			government = republic
+			tag = RUR
+			tag = NOV
 		}	
 		NOT = { is_revolutionary_republic_trigger = yes }
 		NOT = { has_reform = parliamentary_reform }

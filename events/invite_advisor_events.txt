@@ -375,6 +375,9 @@ country_event = {
 				tag = TVE
 				tag = YAR
 			}
+			not = {
+				has_reform = nov_destroy_aristocrats
+			}
 		}
 		
 		add_country_modifier = {

@@ -30,21 +30,23 @@ knyaz = {
 	allow_only_male = yes
 
 	chance = {
-		factor = 1	
+		factor = 2
 		modifier = {
 			factor = 0
 			not = {
 				or = {
-					owned_by = RUR
-					owned_by = RUS
-					owned_by = NOV
-					owned_by = MOS
-					owned_by = RYA
-					owned_by = TVE
-					owned_by = YAR
+					tag = RUR
+					tag = RUS
+					tag = NOV
+					tag = MOS
+					tag = RYA
+					tag = TVE
+					tag = YAR
 				}
 			}
+			has_reform = nov_destroy_aristocrats
 		}
+		
 	}
 	
 	

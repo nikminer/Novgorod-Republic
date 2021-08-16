@@ -75,3 +75,15 @@ enlightener = {
 		factor = 1
 	}
 }
+
+reformator = {
+	monarch_power = ADM
+	reform_progress_growth = 0.2
+	chance = {
+		factor = 1	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

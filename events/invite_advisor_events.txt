@@ -148,6 +148,19 @@ country_event = {
 		}
 	}
 
+	option = {
+		name = invite_advisor.adm.reformator        
+		add_treasury = -100
+		define_advisor = {
+			type = reformator      
+			skill = 1
+		}
+
+		add_country_modifier = {
+			name = invited_advisor
+			duration = 1825
+		}
+	}
 
 	option = {
 		name = invite_advisor.return    

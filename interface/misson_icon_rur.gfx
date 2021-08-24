@@ -32,4 +32,8 @@ spriteTypes = {
 		name = "tobol_kremlin_mission"
 		texturefile = "gfx//interface//missions//tobol_kremlin.dds"
 	}
+	spriteType = {
+		name = "lavra_mission"
+		texturefile = "gfx//interface//missions//lavra.dds"
+	}
 }

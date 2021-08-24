@@ -198,7 +198,36 @@ rur_1 = {
 			}
 		}
 	}
-	
+
+	upgrade_lavra = {
+		icon = lavra_mission
+		position = 4
+		provinces_to_highlight = {
+			province_id = 280
+		}
+		required_missions = {
+			conquer_east_dniepr
+		}
+		
+		trigger = {
+			280 = {
+				has_great_project = {
+					type = kiev_pechersk_lavra
+					tier = 3
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			280 = {
+				add_province_modifier = {
+					name = trade_develop
+					duration = -1
+				}
+			}
+		}
+	}
 }
 
 rur_2 = {
@@ -246,7 +275,7 @@ rur_2 = {
 		}
 	}
 	
-	conquer_east_dniepr = {
+	conquer_west_dniepr = {
 		icon = mission_advance_to_the_dnieper
 		position = 2
 		
@@ -348,12 +377,12 @@ rur_2 = {
 		}
 	}
 
-	conquer_west_dniepr = {
+	conquer_east_dniepr = {
 		icon = mission_rule_ruthenia
 		position = 3
 		
 		required_missions = {
-			conquer_east_dniepr
+			conquer_west_dniepr
 		}
 
 		provinces_to_highlight = {
@@ -384,6 +413,35 @@ rur_2 = {
 		effect = {
 			add_manpower = 10
 			add_army_tradition = 2
+		}
+	}
+
+	kiev_trade_center = {
+		icon = mission_dominate_home_trade_node
+		position = 4
+		provinces_to_highlight = {
+			province_id = 280
+		}
+		required_missions = {
+			conquer_east_dniepr
+		}
+		
+		trigger = {
+			280 = {
+				owned_by = ROOT
+				grown_by_development = 10
+				province_has_center_of_trade_of_level = 3
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			280 = {
+				add_province_modifier = {
+					name = trade_develop
+					duration = -1
+				}
+			}
 		}
 	}
 }
@@ -1197,7 +1255,7 @@ rur_5 = {
 				grown_by_development = 10
 			}
 			285 = {
-				province_has_center_of_trade_of_level = 2
+				province_has_center_of_trade_of_level = 3
 			}
 		}
 

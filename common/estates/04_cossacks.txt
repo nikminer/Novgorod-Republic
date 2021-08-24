@@ -44,7 +44,6 @@ estate_cossacks = {
 		NOT = { has_reform = trading_city }
 		NOT = { is_revolutionary_republic_trigger = yes }
 		NOT = { government = native }
-		NOT = { government = rus_republic }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { has_reform = veche_republic }
 		is_nomad = no

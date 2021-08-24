@@ -14,7 +14,7 @@ estate_vaisyas = {
 		NOT = { is_revolutionary_republic_trigger = yes }
 		NOT = { has_reform = cossacks_reform }
 		NOT = { government = native }
-		NOT = { government = rus_republic }
+		NOT = { tag = RUR }
 		NOT = { has_reform = siberian_tribe }
 		OR = {
 			NOT = { has_reform = celestial_empire }

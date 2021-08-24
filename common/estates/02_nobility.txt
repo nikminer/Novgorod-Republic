@@ -9,7 +9,6 @@ estate_nobles =
 		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = cossacks_reform }
 		NOT = { government = native }
-		NOT = { government = rus_republic }
 		NOT = { has_reform = trading_city }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { is_revolutionary_republic_trigger = yes }

@@ -6,7 +6,7 @@ estate_nomadic_tribes = {
 		has_dlc = "The Cossacks"
 		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { government = native }
-		NOT = { government = rus_republic }
+		NOT = { tag = RUR }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = pirate_republic_reform }

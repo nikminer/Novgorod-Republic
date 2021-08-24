@@ -151,6 +151,7 @@ rur_1 = {
 			OR = {
 				area = minsk_area
 				area = white_ruthenia_area
+				area = pripyat_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -166,6 +167,10 @@ rur_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			pripyat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_manpower = 10
@@ -178,6 +183,13 @@ rur_1 = {
 				add_permanent_claim = ROOT
 			}
 			white_ruthenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			pripyat_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -388,8 +400,169 @@ rur_3 = {
 	}
 	has_country_shield = yes
 
-	upgrade_kremlin ={
+	develop_pskov = {
+		icon = pskov_kremlin_mission
+		position = 1
+		provinces_to_highlight = {
+			area = pskov_area
+		}
+
+		trigger = {
+			pskov_area = {
+				grown_by_development = 10
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			pskov_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	develop_tver = {
+		icon = mission_eastern_european_city
+		position = 2
+		provinces_to_highlight = {
+			area = tver_area
+		}
+
+		trigger = {
+			tver_area = {
+				grown_by_development = 15
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			tver_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	develop_vladimir = {
+		icon = mission_early_game_buildings
+		position = 3
+		provinces_to_highlight = {
+			area = vladimir_area
+		}
+
+		trigger = {
+			vladimir_area = {
+				grown_by_development = 10
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			vladimir_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	develop_yaroslavl = {
+		icon = mission_noble_council
+		position = 4
+		provinces_to_highlight = {
+			area = yaroslavl_area
+		}
+
+		trigger = {
+			yaroslavl_area = {
+				grown_by_development = 10
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			yaroslavl_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	develop_moscow = {
 		icon = kremlin_mission
+		position = 5
+		provinces_to_highlight = {
+			area = moscow_area
+		}
+
+		trigger = {
+			moscow_area = {
+				grown_by_development = 15
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			moscow_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	develop_ryazan = {
+		icon = ryazan_kremlin_mission
+		position = 6
+		provinces_to_highlight = {
+			area = ryazan_area
+		}
+
+		trigger = {
+			ryazan_area = {
+				grown_by_development = 10
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			ryazan_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	develop_nizhny = {
+		icon = nizhny_kremlin_mission
+		position = 7
+		provinces_to_highlight = {
+			area = galich_area
+		}
+
+		trigger = {
+			galich_area = {
+				grown_by_development = 10
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			galich_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	build_all_kremlin = {
+		icon = tobol_kremlin_mission
 		position = 1
 		provinces_to_highlight = {
 			province_id = 295
@@ -402,15 +575,61 @@ rur_3 = {
 					tier = 3
 				}
 			}
+			274 = {
+				has_great_project = {
+					type = pskov_korm
+					tier = 3
+				}
+			}
+			4147 = {
+				has_great_project = {
+					type = rostov_kremlin
+					tier = 3
+				}
+			}
+			464 = {
+				has_great_project = {
+					type = astrakhan_kremlin
+					tier = 3
+				}
+			}
+			1074 = {
+				has_great_project = {
+					type = tobol_kremlin
+					tier = 3
+				}
+			}
+			306 = {
+				has_great_project = {
+					type = nizhny_kremlin
+					tier = 3
+				}
+			}
+			301 = {
+				has_great_project = {
+					type = ryazan_kremlin
+					tier = 3
+				}
+			}
+			300 = {
+				has_great_project = {
+					type = tula_kremlin
+					tier = 3
+				}
+			}
+			1082 = {
+				has_great_project = {
+					type = kazan_kremlin
+					tier = 3
+				}
+			}
 		}
 
 		effect = {
 			add_prestige = 10
-			295 = {
-				add_province_modifier = {
-					name = kremlin_modifier
-					duration = -1
-				}
+			add_country_modifier = {
+				name = kremlin_builders
+				duration = -1
 			}
 		}
 	}
@@ -814,7 +1033,7 @@ rur_4 = {
 		}
 	}
 	south_walls = {
-		icon = mission_great_wall
+		icon = mission_portuguese_interference
 		required_missions = { destroy_horde }
 		provinces_to_highlight = {
 			OR = {
@@ -843,18 +1062,10 @@ rur_4 = {
 				limit = {
 					owned_by = ROOT
 				}
-				add_province_modifier = {
-					name = south_walls_modigier
-					duration = -1
-				}
 			}
 			circassia_area = {
 				limit = {
 					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = south_walls_modigier
-					duration = -1
 				}
 			}
 		}
@@ -872,7 +1083,7 @@ rur_5 = {
 	}
 	has_country_shield = yes
 
-	upgrade_kremlin ={
+	upgrade_kremlin = {
 		icon = kremlin_mission
 		position = 1
 		provinces_to_highlight = {
@@ -893,6 +1104,202 @@ rur_5 = {
 			295 = {
 				add_province_modifier = {
 					name = kremlin_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	build_kazan_kremlin = {
+		icon = kazan_kremlin_mission
+		position = 2
+		provinces_to_highlight = {
+			area = kazan_area
+		}
+		
+		trigger = {
+			mission_completed = subjugate_kazan
+			kazan_area = {
+				owned_by = ROOT
+				grown_by_development = 10
+			}
+			1082 = {
+				has_great_project = {
+					type = kazan_kremlin
+					tier = 1
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			1082 = {
+				add_province_modifier = {
+					name = kremlin_modifier
+					duration = -1
+				}
+			}
+			kazan_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	build_astrakhan_kremlin = {
+		icon = astrakhan_kremlin_mission
+		position = 3
+		provinces_to_highlight = {
+			area = astrakhan_area
+		}
+		
+		trigger = {
+			mission_completed = destroy_big_horde
+			astrakhan_area = {
+				owned_by = ROOT
+				grown_by_development = 10
+			}
+			464 = {
+				has_great_project = {
+					type = astrakhan_kremlin
+					tier = 1
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			464 = {
+				add_province_modifier = {
+					name = kremlin_modifier
+					duration = -1
+				}
+			}
+			astrakhan_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	crimea_trade_center = {
+		icon = mission_dominate_home_trade_node
+		position = 4
+		provinces_to_highlight = {
+			area = crimea_area
+		}
+		
+		trigger = {
+			mission_completed = subjugate_crimea
+			crimea_area = {
+				owned_by = ROOT
+				grown_by_development = 10
+			}
+			285 = {
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			285 = {
+				add_province_modifier = {
+					name = trade_develop
+					duration = -1
+				}
+			}
+			crimea_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	develop_nogai = {
+		icon = mission_cossack_cavalry
+		position = 5
+		provinces_to_highlight = {
+			area = nogai_area
+			area = lower_yik_area
+		}
+		
+		trigger = {
+			mission_completed = destroy_big_horde
+			nogai_area = {
+				owned_by = ROOT
+				grown_by_development = 10
+			}
+			lower_yik_area = {
+				owned_by = ROOT
+				grown_by_development = 10
+			}
+		}
+
+		effect = {
+			lower_yik_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+			nogai_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+		}
+	}
+	develop_kavkaz = {
+		icon = mission_great_wall
+		position = 6
+		provinces_to_highlight = {
+			area = dagestan_area
+			area = circassia_area
+		}
+		
+		trigger = {
+			mission_completed = destroy_big_horde
+			dagestan_area = {
+				owned_by = ROOT
+				grown_by_development = 10
+			}
+			circassia_area = {
+				owned_by = ROOT
+				grown_by_development = 10
+			}
+			425 = {
+				has_building = fort_15th
+			}
+			463 = {
+				has_building = fort_15th
+			}
+		}
+
+		effect = {
+			lower_yik_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+			nogai_area = {
+				add_province_modifier = {
+					name = novgorod_province_development
+					duration = -1
+				}
+			}
+			425 = {
+				add_province_modifier = {
+					name = south_walls_modigier
+					duration = -1
+				}
+			}
+			463 = {
+				add_province_modifier = {
+					name = south_walls_modigier
 					duration = -1
 				}
 			}

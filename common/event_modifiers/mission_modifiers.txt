@@ -25,5 +25,9 @@ kremlin_modifier = {
 
 south_walls_modigier = {
 	defensiveness = 0.2
-	global_manpower = 0.2
+	global_manpower = 0.1
+}
+
+kremlin_builders = {
+	defensiveness = 0.4
 }

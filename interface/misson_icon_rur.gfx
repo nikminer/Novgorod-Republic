@@ -12,4 +12,24 @@ spriteTypes = {
 		name = "nizhny_kremlin_mission"
 		texturefile = "gfx//interface//missions//nizhny_kremlin.dds"
 	}
+	spriteType = {
+		name = "kazan_kremlin_mission"
+		texturefile = "gfx//interface//missions//kazan_kremlin.dds"
+	}
+	spriteType = {
+		name = "ryazan_kremlin_mission"
+		texturefile = "gfx//interface//missions//ryazan_kremlin.dds"
+	}
+	spriteType = {
+		name = "astrakhan_kremlin_mission"
+		texturefile = "gfx//interface//missions//astrakhan_kremlin.dds"
+	}
+	spriteType = {
+		name = "pskov_kremlin_mission"
+		texturefile = "gfx//interface//missions//pskov_kremlin.dds"
+	}
+	spriteType = {
+		name = "tobol_kremlin_mission"
+		texturefile = "gfx//interface//missions//tobol_kremlin.dds"
+	}
 }

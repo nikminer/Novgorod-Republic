@@ -17,7 +17,6 @@ rur_1 = {
 		}
 
 		effect = {
-			add_army_tradition = 1
 			#smolensk
 			if = {
 				limit = {
@@ -237,7 +236,6 @@ rur_1 = {
 		}
 
 		effect = {
-			add_army_tradition = 1
 
 			livonia_area = {
 				limit = {
@@ -247,7 +245,7 @@ rur_1 = {
 				add_permanent_claim = ROOT
 			}
 
-			estonia_area = {
+			estonia_ingria_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -401,7 +399,11 @@ rur_1 = {
 		}
 
 		effect = {
-			
+			add_prestige = 10
+			add_country_modifier = {
+				name = novgorodian_sea
+				duration = -1
+			}
 		}
 	}
 
@@ -920,8 +922,11 @@ rur_2 = {
 			
 		}
 		effect = {
-			
-
+			add_prestige = 10
+			add_country_modifier = {
+				name = varyag_ruler_modifier
+				duration = -1
+			}
 		}
 	}
 }

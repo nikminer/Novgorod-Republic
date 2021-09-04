@@ -50,3 +50,14 @@ school_craftsmanship_modifier = {
 	production_efficiency = 0.15 
 	state_maintenance_modifier = -0.25
 }
+
+novgorodian_sea = {
+	trade_efficiency = 0.2
+	trade_steering = 0.1
+}
+
+varyag_ruler_modifier = {
+	local_manpower_modifier = 1
+	local_development_cost = -0.2
+	local_tax_modifier = 0.2
+}

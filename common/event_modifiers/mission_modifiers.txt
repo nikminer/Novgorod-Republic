@@ -31,3 +31,22 @@ south_walls_modigier = {
 kremlin_builders = {
 	defensiveness = 0.4
 }
+
+cultural_capital_russia_modifier = {
+	advisor_cost = -0.2 
+	advisor_pool = 1 
+	global_institution_spread = 0.2 
+}
+
+aristocratic_school_modifier = {
+	free_leader_pool = 1 
+	leader_cost = -0.1 
+}
+school_of_commerce_modifier = {
+	merchants = 1 
+	placed_merchant_power = 5
+}
+school_craftsmanship_modifier = {
+	production_efficiency = 0.15 
+	state_maintenance_modifier = -0.25
+}

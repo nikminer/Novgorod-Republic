@@ -1,4 +1,3 @@
-
 rur_1 = {
 	slot = 1
 	generic = no
@@ -228,6 +227,213 @@ rur_1 = {
 			}
 		}
 	}
+
+	baltic_thread = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+
+		trigger = {
+			army_size_percentage = 1
+		}
+
+		effect = {
+			add_army_tradition = 1
+
+			livonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			estonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			curonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_livonian = {
+		icon = mission_conquer_riga
+		position = 6
+
+		provinces_to_highlight = {
+			OR = {
+				area = livonia_area
+				area = curonia_area
+				area = estonia_ingria_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		required_missions = {
+			baltic_thread
+		}
+
+		trigger = {
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_manpower = 10
+			add_army_tradition = 2
+			east_prussia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			west_prussia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			samogitia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_teutonic = {
+		icon = mission_danzig_or_war
+		position = 7
+
+		provinces_to_highlight = {
+			OR = {
+				area = east_prussia_area
+				area = west_prussia_area
+				area = samogitia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		required_missions = {
+			conquer_livonian
+		}
+
+		trigger = {
+			east_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			samogitia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_manpower = 10
+			add_army_tradition = 2
+			east_prussia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			west_prussia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			samogitia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	novgorod_sea = {
+		icon = mission_scandinavian_port_authority
+		position = 8
+		required_missions = {
+			conquer_teutonic
+			conquer_sweeden
+		}
+		trigger = {
+			
+		}
+
+		effect = {
+			
+		}
+	}
+
+	conquer_north_islands = {
+		icon = mission_invade_island
+		position = 9
+		required_missions = { conquer_norway }
+		provinces_to_highlight = {
+			OR = {
+				area = subarctic_islands_area  
+				area = greenland_area  
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			subarctic_islands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			greenland_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_army_tradition = 2
+			add_manpower = 10
+
+		}
+	}
 }
 
 rur_2 = {
@@ -444,6 +650,280 @@ rur_2 = {
 			}
 		}
 	}
+
+	
+	return_vyborg = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 30
+			}
+		}
+
+		trigger = {
+			30 = {
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_mercantilism = 1
+			add_manpower = 5
+			finland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			bothnia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	conquer_finland = {
+		icon = mission_conquer_finland
+		position = 6
+		required_missions = { return_vyborg }
+		provinces_to_highlight = {
+			OR = {
+				area = finland_area
+				area = bothnia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			finland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bothnia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mercantilism = 5
+			add_manpower = 10
+			norrland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			svealand_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			gotaland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			vastra_gotaland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_sweeden = {
+		icon = mission_cannons_firing
+		position = 7
+		required_missions = { conquer_finland }
+		provinces_to_highlight = {
+			OR = {
+				area = norrland_area
+				area = svealand_area 
+				area = gotaland_area 
+				area = vastra_gotaland_area 
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			norrland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			svealand_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gotaland_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vastra_gotaland_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mercantilism = 5
+			add_manpower = 10
+
+			northern_norway = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			western_norway = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			eastern_norway = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_norway = {
+		icon = mission_assemble_an_army
+		position = 8
+		required_missions = { conquer_sweeden }
+		provinces_to_highlight = {
+			OR = {
+				area = eastern_norway
+				area = western_norway  
+				area = northern_norway
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			eastern_norway = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_norway  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_norway  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			subarctic_islands_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			greenland_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			add_mercantilism = 5
+			add_manpower = 10
+
+			skaneland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			denmark_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			jutland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_denmark = {
+		icon = mission_have_two_subjects 
+		position = 9
+		required_missions = { conquer_norway }
+		provinces_to_highlight = {
+			OR = {
+				area = skaneland_area 
+				area = denmark_area 
+				area = jutland_area 
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			skaneland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			denmark_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jutland_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_army_tradition = 2
+			add_manpower = 10
+
+		}
+	}
+
+	varyag_ruler = {
+		icon = mission_weather_the_troubles
+		position = 10
+		required_missions = { 
+			conquer_denmark
+			conquer_north_islands
+	 	}
+		trigger = {
+			
+		}
+		effect = {
+			
+
+		}
+	}
 }
 
 
@@ -619,9 +1099,10 @@ rur_3 = {
 			}
 		}
 	}
+
 	build_all_kremlin = {
 		icon = tobol_kremlin_mission
-		position = 1
+		position = 8
 		provinces_to_highlight = {
 			province_id = 295
 		}
@@ -689,6 +1170,91 @@ rur_3 = {
 				name = kremlin_builders
 				duration = -1
 			}
+		}
+	}
+	fund_art_movement = {
+		icon = Compulsory_Education 
+		required_missions = { build_all_kremlin }
+		position = 7 
+		trigger = {
+			artist = 1 
+			capital_scope = { renaissance = 100 }
+			is_at_war = no 
+		}
+		effect = {
+			add_country_modifier = {
+				name = cultural_capital_russia_modifier 
+				duration = -1 
+			}
+		}
+	}
+	school_novgorod = {
+		icon = a_strong_government 
+		required_missions = { fund_art_movement }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				province_id = 33
+				province_id = 310
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { has_building = university }
+			}
+		}
+		trigger = {
+			33 = {
+				owned_by = ROOT 
+				has_building = university 
+			}
+			310 = {
+				owned_by = ROOT 
+				has_building = university
+			}
+		}
+		effect = {
+			custom_tooltip = nov_school_faction
+			if = {
+				limit = { 
+					or = {
+						faction_in_power = mr_aristocrats
+						faction_in_power = nov_strong_aristocrats
+						faction_in_power = nov_enligment_aristocrats
+						faction_in_power = nov_cossacks
+					}
+					 
+				}
+				add_country_modifier = {
+					name = aristocratic_school_modifier 
+					duration = -1 
+				}
+			}
+			if = {
+				limit = { 
+					or = {
+						faction_in_power = mr_traders 
+						faction_in_power = nov_tradecompany 
+					}
+				}
+				add_country_modifier = {
+					name = school_of_commerce_modifier 
+					duration = -1 
+				}
+			}
+			if = {
+				limit = { 
+					or = {
+						faction_in_power = mr_guilds 
+						faction_in_power = nov_manufacturing
+						faction_in_power = nov_capitalist
+					}
+				}
+				add_country_modifier = {
+					name = school_craftsmanship_modifier 
+					duration = -1 
+				}
+			}
+
 		}
 	}
 }
@@ -1284,7 +1850,7 @@ rur_5 = {
 		}
 		
 		trigger = {
-			mission_completed = destroy_big_horde
+			mission_completed = destroy_horde
 			nogai_area = {
 				owned_by = ROOT
 				grown_by_development = 10
@@ -1319,7 +1885,7 @@ rur_5 = {
 		}
 		
 		trigger = {
-			mission_completed = destroy_big_horde
+			mission_completed = south_walls
 			dagestan_area = {
 				owned_by = ROOT
 				grown_by_development = 10

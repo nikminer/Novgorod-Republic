@@ -33,18 +33,20 @@ knyaz = {
 		factor = 2
 		modifier = {
 			factor = 0
-			not = {
-				or = {
-					tag = RUR
-					tag = RUS
-					tag = NOV
-					tag = MOS
-					tag = RYA
-					tag = TVE
-					tag = YAR
+			or = {
+				not = {
+					or = {
+						tag = RUR
+						tag = RUS
+						tag = NOV
+						tag = MOS
+						tag = RYA
+						tag = TVE
+						tag = YAR
+					}
 				}
+				has_reform = nov_destroy_aristocrats
 			}
-			has_reform = nov_destroy_aristocrats
 		}
 		
 	}

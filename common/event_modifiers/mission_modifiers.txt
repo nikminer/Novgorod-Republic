@@ -57,7 +57,7 @@ novgorodian_sea = {
 }
 
 varyag_ruler_modifier = {
-	local_manpower_modifier = 1
+	local_manpower_modifier = 0.3
 	local_development_cost = -0.2
 	local_tax_modifier = 0.2
 }

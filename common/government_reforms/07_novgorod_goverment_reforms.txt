@@ -127,7 +127,7 @@ russian_republic_legacy = {
 		religion = orthodox
 		tag = RUR
 	}
-    fixed_rank = 3
+    
 	modifiers = {
 		governing_capacity = 300
 		global_manpower_modifier = 0.20

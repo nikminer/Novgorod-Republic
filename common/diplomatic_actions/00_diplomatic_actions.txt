@@ -1,0 +1,117 @@
+annexationaction = {
+	condition = {
+		tooltip = ANNEX_TOO_LOW
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+
+
+		condition = {
+			tooltip = ANNEX_NEED_GOVERNMENT
+			potential = {
+				FROM = {
+					vassal_of = ROOT
+				}
+				if = {
+					limit = {
+						ROOT = {
+							government = monarchy
+						}
+					}
+					FROM = {
+						not = {
+							government = monarchy
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						ROOT = {
+							government = republic
+						}
+					}
+					FROM = {
+						not = {
+							government = republic
+						}
+					}
+				}
+		
+				if = {
+					limit = {
+						ROOT = {
+							government = monastic
+						}
+					}
+					FROM = {
+						not = {
+							government = monastic
+						}
+					}
+				}
+			}
+			allow = {
+				if = {
+					limit = {
+						ROOT = {
+							government = monarchy
+						}
+					}
+					FROM = {
+						government = monarchy
+					}
+				}
+				
+				if = {
+					limit = {
+						ROOT = {
+							government = republic
+						}
+					}
+					FROM = {
+						government = republic
+					}
+				}
+		
+				if = {
+					limit = {
+						ROOT = {
+							government = monastic
+						}
+					}
+					FROM = {
+						government = monastic
+					}
+				}
+				
+			}
+		}
+	}
+	#condition = {
+	#	tooltip = ANNEXINVALID
+	#	potential = {
+	#		FROM = {
+	#			vassal_of = ROOT
+	#		}
+	#	}
+	#	allow = {
+	#		FROM = {
+	#			years_in_vassalage_under = {
+	#				who = ROOT
+	#				years = 10
+	#			}
+	#		}
+	#	}
+	#}
+}

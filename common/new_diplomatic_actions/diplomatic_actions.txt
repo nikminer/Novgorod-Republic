@@ -1,0 +1,103 @@
+
+change_government_vassal = {
+    category = influence          
+
+	alert_index = 4
+	alert_tooltip = ICON_ALLIANCE
+    require_acceptance = no   
+    is_visible = {
+		FROM = {
+			vassal_of = ROOT
+		}
+    }
+    
+    is_allowed = {
+        FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 5
+			}
+		}
+	
+		if = {
+			limit = {
+				ROOT = {
+					government = monarchy
+				}
+			}
+			FROM = {
+				not = {
+					government = monarchy
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				ROOT = {
+					government = republic
+				}
+			}
+			FROM = {
+				not = {
+					government = republic
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				ROOT = {
+					government = monastic
+				}
+			}
+			FROM = {
+				not = {
+					government = monastic
+				}
+			}
+		}
+    }
+    
+    on_accept = {
+		if = {
+			limit = {
+				ROOT = {
+					government = monarchy
+				}
+			}
+			FROM = {
+				change_government = monarchy
+			}
+		}
+        
+		if = {
+			limit = {
+				ROOT = {
+					government = republic
+				}
+			}
+			FROM = {
+				change_government = republic
+			}
+		}
+
+		if = {
+			limit = {
+				ROOT = {
+					government = monastic
+				}
+			}
+			FROM = {
+				change_government = monastic
+			}
+		}
+
+		liberty_desire = -20
+    }
+}
+

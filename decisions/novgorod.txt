@@ -83,7 +83,7 @@ country_decisions = {
 			change_tag = RUR
 			swap_non_generic_missions = yes
 			RUR = { 
-				set_government_rank = 3 
+				set_government_rank = 2 
 				change_government = rus_republic
 				add_government_reform = russian_republic
 			}

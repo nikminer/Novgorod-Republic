@@ -155,17 +155,64 @@ country_decisions = {
 				faction_in_power = nov_enligment_aristocrats
 				faction_in_power = nov_strong_aristocrats
 			}
-			treasury = 100
+			if = {
+				limit = {
+					government_rank = 1
+					not ={
+						government_rank = 2
+					}
+				}
+				treasury = 100
+			}
+			if = {
+				limit = {
+					government_rank = 2
+					not ={
+						government_rank = 3
+					}
+				}
+				treasury = 250
+			}
+			if = {
+				limit = {
+					government_rank = 3
+				}
+				treasury = 1000
+			}
 			any_neighbor_country = {
 				tech_difference = 1
 			} 
 		}
 		effect = {
-			add_treasury = -100
+			if = {
+				limit = {
+					government_rank = 1
+					not ={
+						government_rank = 2
+					}
+				}
+				add_treasury = -100
+			}
+			if = {
+				limit = {
+					government_rank = 2
+					not ={
+						government_rank = 3
+					}
+				}
+				add_treasury = -250
+			}
+			if = {
+				limit = {
+					government_rank = 3
+				}
+				add_treasury = -1000
+			}
+
 			add_mil_power = 200
 			add_country_modifier = {
 				name = invited_experts_mil
-				duration = 365
+				duration = 730
 			}
 		}
 	}
@@ -195,17 +242,64 @@ country_decisions = {
 				faction_in_power = nov_capitalist
 				faction_in_power = nov_manufacturing
 			}
-			treasury = 100
+			if = {
+				limit = {
+					government_rank = 1
+					not ={
+						government_rank = 2
+					}
+				}
+				treasury = 100
+			}
+			if = {
+				limit = {
+					government_rank = 2
+					not ={
+						government_rank = 3
+					}
+				}
+				treasury = 250
+			}
+			if = {
+				limit = {
+					government_rank = 3
+				}
+				treasury = 1000
+			}
+			
 			any_neighbor_country = {
 				tech_difference = 1
 			}
 		}
 		effect = {
-			add_treasury = -100
+			if = {
+				limit = {
+					government_rank = 1
+					not ={
+						government_rank = 2
+					}
+				}
+				add_treasury = -100
+			}
+			if = {
+				limit = {
+					government_rank = 2
+					not ={
+						government_rank = 3
+					}
+				}
+				add_treasury = -250
+			}
+			if = {
+				limit = {
+					government_rank = 3
+				}
+				add_treasury = -1000
+			}
 			add_adm_power = 200
 			add_country_modifier = {
 				name = invited_experts_adm
-				duration = 365
+				duration = 730
 			}
 		}
 	}
@@ -233,17 +327,64 @@ country_decisions = {
 				faction_in_power = mr_traders
 				faction_in_power = nov_tradecompany
 			}
-			treasury = 100
+			if = {
+				limit = {
+					government_rank = 1
+					not ={
+						government_rank = 2
+					}
+				}
+				treasury = 100
+			}
+			if = {
+				limit = {
+					government_rank = 2
+					not ={
+						government_rank = 3
+					}
+				}
+				treasury = 250
+			}
+			if = {
+				limit = {
+					government_rank = 3
+				}
+				treasury = 1000
+			}
 			any_neighbor_country = {
 				tech_difference = 1
 			}
 		}
 		effect = {
-			add_treasury = -100
+			if = {
+				limit = {
+					government_rank = 1
+					not ={
+						government_rank = 2
+					}
+				}
+				add_treasury = -100
+			}
+			if = {
+				limit = {
+					government_rank = 2
+					not ={
+						government_rank = 3
+					}
+				}
+				add_treasury = -250
+			}
+			if = {
+				limit = {
+					government_rank = 3
+				}
+				add_treasury = -1000
+			}
+
 			add_dip_power = 200
 			add_country_modifier = {
 				name = invited_experts_dip
-				duration = 365
+				duration = 730
 			}
 		}
 	}

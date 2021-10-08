@@ -41,7 +41,30 @@ country_event = {
 	desc = ""
 	option = {
 		name = invite_advisor.adm.philosopher
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = philosopher
 			skill = 1
@@ -54,7 +77,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.adm.natural_scientist
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = natural_scientist 
 			skill = 1
@@ -67,7 +113,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.adm.artist
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = artist  
 			skill = 1
@@ -80,7 +149,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.adm.treasurer 
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = treasurer   
 			skill = 1
@@ -93,7 +185,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.adm.theologian  
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = theologian    
 			skill = 1
@@ -106,7 +221,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.adm.master_of_mint   
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = master_of_mint     
 			skill = 1
@@ -119,7 +257,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.adm.inquisitor    
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = inquisitor      
 			skill = 1
@@ -132,7 +293,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.adm.enlightener        
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = enlightener        
 			skill = 1
@@ -150,7 +334,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.adm.reformator        
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = reformator      
 			skill = 1
@@ -177,7 +384,30 @@ country_event = {
 	desc = ""
 	option = {
 		name = invite_advisor.dip.statesman 
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = statesman 
 			skill = 1
@@ -281,7 +511,30 @@ country_event = {
 	desc = ""
 	option = {
 		name = invite_advisor.mil.army_reformer  
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = army_reformer  
 			skill = 1
@@ -294,7 +547,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.mil.army_organiser   
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = army_organiser   
 			skill = 1
@@ -307,7 +583,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.mil.commandant    
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = commandant    
 			skill = 1
@@ -320,7 +619,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.mil.quartermaster     
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = quartermaster     
 			skill = 1
@@ -333,7 +655,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.mil.recruitmaster      
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = recruitmaster      
 			skill = 1
@@ -346,7 +691,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.mil.fortification_expert       
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = fortification_expert       
 			skill = 1
@@ -359,7 +727,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.mil.grand_captain        
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = grand_captain        
 			skill = 1
@@ -372,7 +763,30 @@ country_event = {
 
 	option = {
 		name = invite_advisor.mil.knyaz        
-		add_treasury = -100
+		if = {
+			limit = {
+				government_rank = 1
+				not ={
+					government_rank = 2
+				}
+			}
+			add_treasury = -50
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				not ={
+					government_rank = 3
+				}
+			}
+			add_treasury = -100
+		}
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			add_treasury = -250
+		}
 		define_advisor = {
 			type = knyaz        
 			skill = 1

@@ -1,0 +1,29 @@
+wild_field = {
+	potential = {
+		has_terrain = steppe
+	}
+
+	trigger = {
+		has_terrain = steppe
+	}
+
+	land_attrition = -0.20
+	
+	on_activation = {
+		NOT = {
+			OR = {
+				development = 15
+				has_building = fort_15th
+			}
+		}
+	}
+	
+	on_deactivation = {
+		
+		OR = {
+			development = 15
+			has_building = fort_15th
+		}
+	}
+	
+}

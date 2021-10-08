@@ -49,25 +49,25 @@ tr_novgorod_1 = {
 			310 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			311 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			4260 ={
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			1959 ={
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -90,7 +90,7 @@ tr_novgorod_1 = {
 		trigger = {
 			34 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 			33 = {
 				owned_by = ROOT
@@ -98,7 +98,7 @@ tr_novgorod_1 = {
 			}
 			1961 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 		}
 
@@ -107,19 +107,19 @@ tr_novgorod_1 = {
 			33 = {
 				add_province_modifier = {
 					name = neva_fleet
-					duration = -1
+					duration = 365
 				}
 			}
 			34 = {
 				add_province_modifier = {
 					name = neva_fleet
-					duration = -1
+					duration = 365
 				}
 			}
 			1961 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -141,16 +141,16 @@ tr_novgorod_1 = {
 		trigger = {
 			32 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 			309 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 
 			}
 			4124 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}			
 		}
 
@@ -159,19 +159,19 @@ tr_novgorod_1 = {
 			32 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			309 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			4124 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -221,62 +221,6 @@ tr_novgorod_1 = {
 		}
 	}
 
-	return_vyborg = {
-		icon = mission_build_up_to_force_limit
-		position = 5
-		required_missions = {
-			develop_port_neva
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 30
-			}
-		}
-
-		trigger = {
-			30 = {
-				owned_by = ROOT
-			}
-		}
-
-		effect = {
-			add_mercantilism = 1
-			add_manpower = 5
-		}
-	}
-
-	conquer_finland = {
-		icon = mission_conquer_finland
-		position = 6
-		required_missions = { return_vyborg }
-		provinces_to_highlight = {
-			OR = {
-				area = finland_area
-				area = bothnia_area
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			finland_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			bothnia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_mercantilism = 5
-			add_manpower = 10
-			add_country_modifier = {
-				name = nov_grand_duchy_finland
-				duration = -1
-			}
-		}
-	}
 }
 
 tr_novgorod_2 = {
@@ -342,15 +286,15 @@ tr_novgorod_2 = {
 			}
 			4257 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 			4256 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 			4122 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 		}
 
@@ -367,19 +311,19 @@ tr_novgorod_2 = {
 			4257 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			4256 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			4122 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -403,23 +347,23 @@ tr_novgorod_2 = {
 		trigger = {
 			1776 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 			313 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 			4258 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 			1958 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 			1777 = {
 				owned_by = ROOT
-				grown_by_development = 3
+				grown_by_development = 4
 			}
 		}
 
@@ -428,31 +372,31 @@ tr_novgorod_2 = {
 			1777 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			313 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			4258 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			1958 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 			1776 = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -491,7 +435,7 @@ tr_novgorod_2 = {
 	nov_best_node = {
 		icon = mission_novgorod_the_great
 		position = 6
-		required_missions = { return_vyborg develop_port_arkhangelsk  }
+		required_missions = { develop_port_neva develop_port_arkhangelsk nov_conquer_princes }
 		provinces_to_highlight = {
 			AND = {
 				province_id = 33

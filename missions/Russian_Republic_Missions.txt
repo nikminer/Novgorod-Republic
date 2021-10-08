@@ -961,7 +961,7 @@ rur_3 = {
 			pskov_area = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -984,7 +984,7 @@ rur_3 = {
 			tver_area = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -1007,7 +1007,7 @@ rur_3 = {
 			vladimir_area = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -1030,7 +1030,7 @@ rur_3 = {
 			yaroslavl_area = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -1053,7 +1053,7 @@ rur_3 = {
 			moscow_area = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -1076,7 +1076,7 @@ rur_3 = {
 			ryazan_area = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}
@@ -1099,7 +1099,7 @@ rur_3 = {
 			galich_area = {
 				add_province_modifier = {
 					name = novgorod_province_development
-					duration = -1
+					duration = 365
 				}
 			}
 		}

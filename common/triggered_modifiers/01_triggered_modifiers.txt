@@ -33,6 +33,10 @@ novgorod_school = {
 			has_great_project = {
 				type = monument
 			}
+			OR = {
+				owned_by = NOV 
+				owned_by = RUR
+			}
 		}
 	}
 

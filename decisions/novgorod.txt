@@ -78,17 +78,21 @@ country_decisions = {
 				owns_core_province = 307
 			}
 		}
-
-		effect = {
-			change_tag = RUR
-			swap_non_generic_missions = yes
+		hidden_effect = {
 			RUR = { 
 				set_government_rank = 2 
 				change_government = rus_republic
 				add_government_reform = russian_republic
+				override_country_name = RUR
 			}
-			
-			
+		}
+		effect = {
+			change_tag = RUR
+			swap_non_generic_missions = yes
+			RUR = { 
+				add_government_reform = russian_republic
+			}
+
 			add_prestige = 25
 			
 			set_country_flag = formed_russia_flag

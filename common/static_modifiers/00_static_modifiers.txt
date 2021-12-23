@@ -1,0 +1,3 @@
+steppe = {
+	add_province_triggered_modifier = wild_field
+}

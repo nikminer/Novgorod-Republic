@@ -1,14 +1,26 @@
 wild_field = {
 	potential = {
-		has_terrain = steppe
-	}
-
+		NOT = {
+			OR = {
+				development = 15
+				has_building = fort_15th
+			}
+		}
+	}	
 	trigger = {
-		has_terrain = steppe
+		NOT = {
+			OR = {
+				development = 15
+				has_building = fort_15th
+			}
+		}
 	}
 
-	land_attrition = -0.20
 	
+
+	attrition = 2
+	
+
 	on_activation = {
 		NOT = {
 			OR = {
@@ -19,7 +31,6 @@ wild_field = {
 	}
 	
 	on_deactivation = {
-		
 		OR = {
 			development = 15
 			has_building = fort_15th

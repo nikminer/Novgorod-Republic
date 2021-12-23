@@ -1,4 +1,4 @@
-version="0.6.1"
+version="0.5"
 picture="thumbnail.png"
 tags={
 	"Missions And Decisions"
@@ -8,5 +8,5 @@ tags={
 	"Historical"
 }
 name="Novgorod Republic"
-supported_version="1.32.*
+supported_version="1.32.2"
 remote_file_id="2559017207"

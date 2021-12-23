@@ -1,0 +1,151 @@
+country_decisions = {
+	construct_rostov_kremlin = {
+		potential = {
+			culture_group = east_slavic
+			4147 = {
+				owned_by = ROOT
+				not = {
+					has_great_project = {
+						type = rostov_kremlin
+					}
+				}
+			}
+		}
+
+		allow = {
+			is_year = 1670
+			treasury = 500
+		}
+
+		effect = {
+			4147 = {
+				add_great_project = rostov_kremlin
+			}
+		}
+	}
+
+	construct_astrakhan_kremlin = {
+		potential = {
+			culture_group = east_slavic
+			464 = {
+				owned_by = ROOT
+				not = {
+					has_great_project = {
+						type = astrakhan_kremlin
+					}
+				}
+			}
+		}
+
+		allow = {
+			is_year = 1562
+			treasury = 500
+		}
+
+		effect = {
+			464 = {
+				add_great_project = astrakhan_kremlin
+			}
+		}
+	}
+
+	construct_tobol_kremlin = {
+		potential = {
+			culture_group = east_slavic
+			1074 = {
+				owned_by = ROOT
+				not = {
+					has_great_project = {
+						type = tobol_kremlin
+					}
+				}
+			}
+		}
+
+		allow = {
+			is_year = 1683
+			treasury = 500
+		}
+
+		effect = {
+			1074 = {
+				add_great_project = tobol_kremlin
+			}
+		}
+	}
+
+	construct_nizhny_kremlin = {
+		potential = {
+			culture_group = east_slavic
+			306 = {
+				owned_by = ROOT
+				not = {
+					has_great_project = {
+						type = nizhny_kremlin
+					}
+				}
+			}
+		}
+
+		allow = {
+			is_year = 1508
+			treasury = 500
+		}
+
+		effect = {
+			306 = {
+				add_great_project = nizhny_kremlin
+			}
+		}
+	}
+
+	construct_tula_kremlin = {
+		potential = {
+			culture_group = east_slavic
+			300 = {
+				owned_by = ROOT
+				not = {
+					has_great_project = {
+						type = tula_kremlin
+					}
+				}
+			}
+		}
+
+		allow = {
+			is_year = 1514
+			treasury = 500
+		}
+
+		effect = {
+			300 = {
+				add_great_project = tula_kremlin
+			}
+		}
+	}
+
+	construct_kazan_kremlin = {
+		potential = {
+			culture_group = east_slavic
+			1082 = {
+				owned_by = ROOT
+				not = {
+					has_great_project = {
+						type = kazan_kremlin
+					}
+				}
+			}
+		}
+
+		allow = {
+			is_year = 1672
+			treasury = 500
+		}
+
+		effect = {
+			1082 = {
+				add_great_project = kazan_kremlin
+			}
+		}
+	}
+}

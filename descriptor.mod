@@ -8,5 +8,5 @@ tags={
 	"Historical"
 }
 name="Novgorod Republic"
-supported_version="1.32.2"
+supported_version="1.32.*"
 remote_file_id="2559017207"

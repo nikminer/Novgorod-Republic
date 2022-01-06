@@ -156,7 +156,6 @@ russian_republic = {
 	}
 	legacy_equivalent = russian_republic_legacy
 	modifiers = {
-		merchants = 2
 		governing_capacity = 250
 	}
 	valid_for_nation_designer = yes
@@ -311,6 +310,5 @@ nov_new_political_streams = {
 		nov_conservo
 		nov_liberal
 		nov_reaction
-	}
-	
+	}	
 }

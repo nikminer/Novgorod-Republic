@@ -8,7 +8,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = creating_parliament.a
-
+		add_government_reform = russian_republic
 		#Novgorod
 		if = {
 			limit = {
@@ -88,11 +88,10 @@ country_event = {
 				set_seat_in_parliament = yes
 			}
 		}
-
 	}
 	option = {
 		name = creating_parliament.b
-
+		add_government_reform = russian_republic
 		#Novgorod
 		if = {
 			limit = {
@@ -259,6 +258,7 @@ country_event = {
 	}
 	option = {
 		name = creating_parliament.c
+		add_government_reform = russian_republic	
 	}
 }
 
@@ -443,5 +443,33 @@ country_event = {
 		add_faction = nov_capitalist
 		clr_country_flag = manufacturing
 		set_country_flag = capitalist
+	}
+}
+
+#return_tsar
+country_event = {
+	id = creating_parliament.8
+	title = creating_parliament.8t
+	desc = creating_parliament.8d
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = creating_parliament.a8
+		add_government_reform = tsardom
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		override_country_name = RUS
+		hidden_effect = {
+			if = {
+				limit = {
+					owns = 310
+				}
+				complete_mission = tr_invade_novgorod_mission
+				complete_mission = tr_subjugate_novgorod
+			}
+		}
 	}
 }

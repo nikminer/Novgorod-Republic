@@ -1,0 +1,276 @@
+# forming russian nation
+rus_forming_republic = {
+	icon = "generic_people"
+	republic = yes
+	legacy_government = yes
+
+	allow_convert = no
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+
+	rulers_can_be_generals = yes
+	queen = no
+	heir = no
+	duration = 3
+	
+	boost_income = yes
+
+	has_term_election = yes
+	states_general_mechanic = {
+		statists = {
+			diplomatic_reputation = 1
+			global_unrest = -1
+			republican_tradition = 5
+		}
+		monarchists = {
+			prestige = 0.5
+			manpower_recovery_speed = -0.5
+			republican_tradition = -5
+		}
+	}
+    
+	modifiers = {
+		global_unrest = 5
+		governing_capacity = 400
+		monthly_reform_progress = 5
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = no
+	}
+
+	conditional = {
+		has_parliament = no
+		claim_states = no
+
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+	}
+
+	removed_effect = {
+		#country_event = { id = dutch_republic.33 }
+	}
+}
+
+rus_expand_diplomat_reform = {
+	icon = "nobleman"
+
+	modifiers = {
+		diplomats = 1
+		diplomatic_reputation = 1
+	}
+	effect = {
+		set_country_flag = rus_expand_diplomat_reform 
+		if = {
+			limit =  {
+				has_country_flag = rus_expand_merchant_reform
+			}
+			clr_country_flag = rus_expand_merchant_reform
+		}
+	}
+	
+}
+
+rus_expand_merchant_reform = {
+	icon = "merchant_ship"
+
+	modifiers = {
+		merchants = 1
+		trade_efficiency = 0.1
+	}
+	effect = {
+		set_country_flag = rus_expand_merchant_reform
+		if = {
+			limit =  {
+				has_country_flag = rus_expand_diplomat_reform
+			}
+			clr_country_flag = rus_expand_diplomat_reform
+		}
+	}
+}
+
+rus_money_reform = {
+	icon = "paper_money_map"
+	allow_convert = no
+	allow_normal_conversion = no
+	
+	modifiers = {
+		global_tax_modifier = 0.1
+		inflation_action_cost = -0.1
+		trade_efficiency = 0.1
+	}
+	effect = {
+		change_statists_vs_monarchists = -0.2
+		set_country_flag = rus_money_reform
+		if = {
+			limit =  {
+				has_country_flag = rus_save_money_reform
+			}
+			clr_country_flag = rus_save_money_reform
+		}
+	}
+}
+
+rus_save_money_reform = {
+	icon = "tribal_centralize_power"
+
+	trigger = {
+		NOT = {
+			has_reform = rus_money_reform 
+		}
+	}	
+
+	modifiers = {
+		trade_efficiency = -0.1
+		inflation_action_cost = 0.1
+		global_unrest = -2
+	}
+	effect = {
+		change_statists_vs_monarchists = 0.2
+		set_country_flag = rus_save_money_reform
+
+		if = {
+			limit =  {
+				has_country_flag = rus_money_reform
+			}
+			clr_country_flag = rus_money_reform
+		}	
+	}
+}
+
+rus_private_land_ownership_reform = {
+	icon = "peasants"
+
+	allow_convert = no
+	allow_normal_conversion = no
+
+	trigger = {
+		NOT = {
+			has_reform = rus_serfdom_reform 
+		}
+	}	
+
+	modifiers = {
+		production_efficiency = 0.1
+		manpower_recovery_speed = -0.1
+	}
+	effect = {
+		change_statists_vs_monarchists = -0.3
+		set_country_flag = rus_private_land_ownership_reform
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+	}
+}
+
+rus_serfdom_reform = {
+	icon = "russian_principality"
+
+	allow_convert = no
+	allow_normal_conversion = no
+
+	trigger = {
+		NOT = {
+			has_reform = rus_private_land_ownership_reform 
+		}
+	}	
+
+	modifiers = {
+		manpower_recovery_speed = 0.2
+		production_efficiency = -0.1
+	}
+	effect = {
+		change_statists_vs_monarchists = 0.3	
+		set_country_flag = rus_serfdom_reform
+	}
+
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+rus_self_government_reform = {
+	icon = "self_governing_colony_government"
+	modifiers = {
+		global_unrest = -5
+		build_cost = -0.1
+		build_time = -0.1
+		monthly_reform_progress = 1
+	}
+	effect = {
+		set_country_flag = rus_self_government_reform
+	}
+}
+
+rus_veche_reform = {
+	icon = "ballot_box"
+	has_parliament = yes
+
+	trigger = {
+		is_statists_in_power = yes  
+		has_reform = rus_private_land_ownership_reform
+	}
+
+	effect = {
+		change_tag = RUR
+		swap_non_generic_missions = yes
+		RUR = { 
+			change_government = rus_republic
+			override_country_name = RUR
+			set_government_rank = 3
+			change_government_reform_progress = -100000
+		}		
+		
+		country_event = { 
+			id = creating_parliament.1 
+		}
+
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { 
+				id = ideagroups.1 
+			}
+		}
+		add_prestige = 25
+	}
+}
+
+rus_tsardom_reform = {
+	icon = "commander_king_reform"
+
+	trigger = {
+		is_monarchists_in_power = yes 
+		has_reform = rus_serfdom_reform
+	}
+
+	effect = {
+		change_tag = RUS
+		swap_non_generic_missions = yes
+		remove_non_electors_emperors_from_empire_effect = yes
+		change_government_to_monarchy = yes
+
+		RUS = {
+			set_government_rank = 3
+			change_government_reform_progress = -100000
+		}
+
+		country_event = { 
+			id = creating_parliament.8 
+		}
+
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { 
+				id = ideagroups.1 
+			}
+		}
+		add_prestige = 25
+	}
+}

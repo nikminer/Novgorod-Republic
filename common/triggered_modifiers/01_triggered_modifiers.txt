@@ -36,6 +36,7 @@ novgorod_school = {
 			OR = {
 				owned_by = NOV 
 				owned_by = RUR
+				owned_by = GNR
 			}
 		}
 	}

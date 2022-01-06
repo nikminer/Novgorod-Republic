@@ -20,6 +20,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_russia_flag }
 		}
 		major = yes
+
 		provinces_to_highlight = {
 			OR = {
 				province_id = 295	
@@ -65,79 +66,42 @@ country_decisions = {
 			has_mission = nov_conquer_princes
 			owns_core_province = 295
 			owns_core_province = 310
-			OR = {
-				owns_core_province = 294
-				owns_core_province = 308			
-			}
-			OR = {
-				owns_core_province = 301
-				owns_core_province = 293
-			}
-			OR = {
-				owns_core_province = 306
-				owns_core_province = 307
-			}
+			owns_core_province = 312
+			owns_core_province = 294
+			owns_core_province = 308			
+			owns_core_province = 1079
+			owns_core_province = 301
+			owns_core_province = 4147
 		}
-		hidden_effect = {
-			RUR = { 
-				set_government_rank = 2 
-				change_government = rus_republic
-				add_government_reform = russian_republic
-				override_country_name = RUR
-			}
-		}
-		effect = {
-			change_tag = RUR
-			swap_non_generic_missions = yes
-			RUR = { 
-				add_government_reform = russian_republic
-			}
 
+		effect = {
+			change_tag = GNR
+			swap_non_generic_missions = yes
+			GNR = { 
+				set_government_rank = 2 
+				change_government = rus_forming
+				add_government_reform = rus_forming_republic
+				override_country_name = GNR
+			}
+			
 			add_prestige = 25
 			
 			set_country_flag = formed_russia_flag
-			russia_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = RUR
-			}
-			crimea_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = RUR
-			}
-			ural_region = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-					}
-					is_empty = no
-				}
-				add_permanent_claim = RUR
-			}
-
-			if = {
-				limit = {
-					has_custom_ideas = no
-				}
-				country_event = { 
-					id = ideagroups.1 
-				}
-			}
-			country_event = { 
-				id = creating_parliament.1 
-			}
 		}
-		
+
+		hidden_effect = {
+			change_government_reform_progress = -100000
+		}
 	}
+
+	
 
 	invite_officers = {
 		potential = {
 			or = {
 				tag = NOV
 				tag = RUR
+				tag = GNR
 			}
 			or = {
 				has_faction = mr_aristocrats
@@ -226,6 +190,7 @@ country_decisions = {
 			or = {
 				tag = NOV
 				tag = RUR
+				tag = GNR
 			}
 			or = {
 				has_faction = mr_guilds
@@ -313,6 +278,7 @@ country_decisions = {
 			or = {
 				tag = NOV
 				tag = RUR
+				tag = GNR
 			}
 			or = {
 				has_faction = mr_traders
@@ -398,6 +364,7 @@ country_decisions = {
 			or = {
 				tag = NOV
 				tag = RUR
+				tag = GNR
 			}
 			not = {
 				has_reform = nov_destroy_aristocrats

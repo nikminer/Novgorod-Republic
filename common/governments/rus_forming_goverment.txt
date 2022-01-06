@@ -1,0 +1,55 @@
+rus_forming = {
+    basic_reform = republic_mechanic
+    
+    color = { 65 155 220 }
+    
+    reform_levels = {
+        forming_government = {
+			reforms = {
+				rus_forming_republic
+			}
+		}
+
+        economy_reform = {
+            reforms = {
+                rus_money_reform,
+                rus_save_money_reform
+            }
+        }
+
+        state_reform = {
+            reforms = {
+                rus_self_government_reform,
+            }
+        }
+
+        population_reform = {
+            reforms = {
+                rus_private_land_ownership_reform,
+                rus_serfdom_reform
+            }
+        }
+
+        expand_goverment = {
+            reforms = {
+                rus_expand_merchant_reform,
+                rus_expand_diplomat_reform
+            }
+        }
+
+        establish_government = {
+            reforms = {
+                rus_veche_reform,
+                rus_tsardom_reform
+            }
+        }
+    }
+
+	exclusive_reforms = {
+		rus_forming_republic
+	} 
+
+    legacy_government = {
+        rus_forming_republic
+    }
+}

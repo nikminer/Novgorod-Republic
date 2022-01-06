@@ -1,0 +1,16 @@
+bookmark =
+{
+	name = "Two_giants"
+	desc = "Two_giants_DESC"
+	date = 1444.11.11
+	
+	center = 295
+	default = yes
+	
+	country = MOS
+	country = NOV
+	country = RYA
+    country = TVE
+
+	easy_country = MOS
+}

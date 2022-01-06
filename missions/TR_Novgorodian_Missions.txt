@@ -6,7 +6,10 @@ tr_novgorod_1 = {
 		has_dlc = "Third Rome"
 	}
 	potential = {
-		tag = NOV
+		or = {
+			tag = NOV
+			tag = GNR
+		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -231,7 +234,10 @@ tr_novgorod_2 = {
 		has_dlc = "Third Rome"
 	}
 	potential = {
-		tag = NOV
+		or = {
+			tag = NOV
+			tag = GNR
+		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -434,7 +440,7 @@ tr_novgorod_2 = {
 
 	nov_best_node = {
 		icon = mission_novgorod_the_great
-		position = 6
+		position = 5
 		required_missions = { develop_port_neva develop_port_arkhangelsk nov_conquer_princes }
 		provinces_to_highlight = {
 			AND = {
@@ -462,9 +468,7 @@ tr_novgorod_2 = {
 				}
 				change_province_name = "Great Novgorod"
 				rename_capital = "Great Novgorod"
-			}
-			override_country_name = great_novgorod
-			
+			}			
 		}
 	}
 }
@@ -477,7 +481,10 @@ tr_novgorod_3= {
 		has_dlc = "Third Rome"
 	}
 	potential = {
-		tag = NOV
+		or = {
+			tag = NOV
+			tag = GNR
+		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -547,7 +554,10 @@ tr_novgorod_4= {
 		has_dlc = "Third Rome"
 	}
 	potential = {
-		tag = NOV
+		or = {
+			tag = NOV
+			tag = GNR
+		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -788,7 +798,10 @@ tr_novgorod_5 = {
 		has_dlc = "Third Rome"
 	}
 	potential = {
-		tag = NOV
+		or = {
+			tag = NOV
+			tag = GNR
+		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
 	}

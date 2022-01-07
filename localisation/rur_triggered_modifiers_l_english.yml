@@ -1,13 +1,13 @@
 l_english:
  # novgorod modifiers
- open_europian_door: "O²¬pº²a÷ °ac²e¨» ¦¢ep» ¢ E¢po±³"
- novgorod_school: "Ho¢¥opo¦c¬a÷ ·¬o®a"
+ open_europian_door:0 "O²¬pº²a÷ °ac²e¨» ¦¢ep» ¢ E¢po±³"
+ novgorod_school:0 "Ho¢¥opo¦c¬a÷ ·¬o®a"
 
-# Forming russian modifiers
- rus_expand_diplomat: "ƒª±®o¯a²ª¶ec¬ª« ¬op±³c"
- rus_expand_merchant: "Top¥o¢º« ¬op±³c"
- rus_money: "E¦ª°a÷ ¢a®¾²a"
- rus_save_money: "…a¸ª²a ¯ec²°o« ¢a®¾²º"
- rus_private_land_ownership: "“ac²°oe ©e¯®e¢®a¦e°ªe"
- rus_serfdom: "Kpe±oc²°oe ±pa¢o"
- rus_self_government: "Ca¯o³±pa¢®e°ªe"
+ # Forming russian modifiers
+ rus_expand_diplomat:0 "ƒª±®o¯a²ª¶ec¬ª« ¬op±³c"
+ rus_expand_merchant:0 "Top¥o¢º« ¬op±³c"
+ rus_money:0 "E¦ª°a÷ ¢a®¾²a"
+ rus_save_money:0 "…a¸ª²a ¯ec²°o« ¢a®¾²º"
+ rus_private_land_ownership:0 "“ac²°oe ©e¯®e¢®a¦e°ªe"
+ rus_serfdom:0 "Kpe±oc²°oe ±pa¢o"
+ rus_self_government:0 "Ca¯o³±pa¢®e°ªe"

@@ -13,4 +13,5 @@ bookmark =
     country = TVE
 
 	easy_country = MOS
+	easy_country = NOV
 }

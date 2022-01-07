@@ -1,0 +1,24 @@
+﻿l_english:
+ #Russian Republic
+ RUR: "Poccª÷"
+ RUR_ADJ: "P³cc¬"
+ RUR_ADJ2: "P³cc¬"
+ RUR_parliament_name: "Be¶e"
+ RUR_ideas: "P³cc¬ªe ª¦eª"
+ RUR_ideas_bonus: "P³cc¬ªe a¯ ªµªª"
+ RUR_ideas_start: "P³cc¬ªe Tpa¦ªµªª"
+ 
+ #Veche Republic
+ Veche_Republic: "Be¶e¢a÷ pec±³ ®ª¬a"
+ Grand_Veche_Republic: "Be®ª¬a÷ Pec±³ ®ª¬a"
+ Great_Veche_Republic: "Be®ª¶a«·a÷ Pec±³ ®ª¬a"
+ Posadnik: "‰oca¦°ª¬"
+ Grand_Posadnik: "‚oc±o¦ª° ‰oca¦°ª¬"
+ Great_Posadnik: "Be®ª¬ª« ‰oca¦°ª¬"
+ 
+ #Great Novgorod Republic
+ GNR: "Be®ª¬a÷ Ho¢¥opo¦c¬a÷ Pec±³ ®ª¬a"
+ GNR_ADJ: "Ho¢¥opo¦c¬"
+ GNR_ADJ2: "Ho¢¥opo¦c¬"
+ rus_forming_desc: "‘op¯ªp³¾¸a÷c÷ pec±³ ®ª¬a, ±oc²e±e°°o ±epexo¦÷¸ee o² ´eo¦a®»°ºx o²°o·e°ª« ¬ ±o®°oµe°°o¯³ ¥oc³¦apc²¢e°°o¯³ c²po¾ oc°o¢a°°o¯³ °a ¦e¯o¬pa²ªª. "
+ rus_forming: "‘op¯ªp³¾¸a÷c÷ pec±³ ®ª¬a"

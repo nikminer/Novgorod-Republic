@@ -249,7 +249,7 @@ nov_strong_aristocrats_reform = {
 	}
 }
 
-nov_destroy_aristocrats = {
+nov_destroy_aristocrats_reform = {
 	icon = "man_on_podium"
 	potential = {
 		tag=RUR

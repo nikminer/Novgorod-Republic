@@ -1,4 +1,9 @@
-﻿l_english:
+l_english:
+ # novgorod modifiers
+ open_europian_door: "O²¬pº²a÷ °ac²e¨» ¦¢ep» ¢ E¢po±³"
+ novgorod_school: "Ho¢¥opo¦c¬a÷ ·¬o®a"
+
+# Forming russian modifiers
  rus_expand_diplomat: "ƒª±®o¯a²ª¶ec¬ª« ¬op±³c"
  rus_expand_merchant: "Top¥o¢º« ¬op±³c"
  rus_money: "E¦ª°a÷ ¢a®¾²a"

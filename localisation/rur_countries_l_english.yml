@@ -1,5 +1,4 @@
 ﻿l_english:
- #Russian Republic
  RUR:1 "Poccª÷"
  RUR_ADJ:1 "P³cc¬"
  RUR_ADJ2:1 "P³cc¬"
@@ -7,18 +6,15 @@
  RUR_ideas:1 "P³cc¬ªe ª¦eª"
  RUR_ideas_bonus:1 "P³cc¬ªe a¯ ªµªª"
  RUR_ideas_start:1 "P³cc¬ªe Tpa¦ªµªª"
- 
- #Veche Republic
  Veche_Republic:1 "Be¶e¢a÷ pec±³ ®ª¬a"
  Grand_Veche_Republic:1 "Be®ª¬a÷ Pec±³ ®ª¬a"
  Great_Veche_Republic:1 "Be®ª¶a«·a÷ Pec±³ ®ª¬a"
  Posadnik:1 "‰oca¦°ª¬"
  Grand_Posadnik:1 "‚oc±o¦ª° ‰oca¦°ª¬"
  Great_Posadnik:1 "Be®ª¬ª« ‰oca¦°ª¬"
- 
- #Great Novgorod Republic
  GNR:1 "Be®ª¬a÷ Ho¢¥opo¦c¬a÷ Pec±³ ®ª¬a"
  GNR_ADJ:1 "Ho¢¥opo¦c¬"
  GNR_ADJ2:1 "Ho¢¥opo¦c¬"
  rus_forming_desc:1 "‘op¯ªp³¾¸a÷c÷ pec±³ ®ª¬a, ±oc²e±e°°o ±epexo¦÷¸ee o² ´eo¦a®»°ºx o²°o·e°ª« ¬ ±o®°oµe°°o¯³ ¥oc³¦apc²¢e°°o¯³ c²po¾ oc°o¢a°°o¯³ °a ¦e¯o¬pa²ªª. "
  rus_forming:1 "‘op¯ªp³¾¸a÷c÷ pec±³ ®ª¬a"
+ rus_forming_name: "‘op¯ªp³¾¸a÷c÷ pec±³ ®ª¬a"

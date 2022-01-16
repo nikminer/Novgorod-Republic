@@ -45,7 +45,7 @@ knyaz = {
 						tag = YAR
 					}
 				}
-				has_reform = nov_destroy_aristocrats
+				has_reform = nov_destroy_aristocrats_reform
 			}
 		}
 		

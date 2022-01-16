@@ -44,7 +44,7 @@ on_reform_enacted = {
 					or = {
 						has_country_flag = question_of_aristocrats
 						has_country_flag = new_political_streams
-						has_reform = nov_destroy_aristocrats
+						has_reform = nov_destroy_aristocrats_reform
 					}
 				}
 			}
@@ -203,7 +203,7 @@ on_reform_changed = {
 					or = {
 						has_country_flag = question_of_aristocrats
 						has_country_flag = new_political_streams
-						has_reform = nov_destroy_aristocrats
+						has_reform = nov_destroy_aristocrats_reform
 					}
 				}
 			}

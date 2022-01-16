@@ -1,0 +1,33 @@
+﻿l_english:
+ develop_novgorod_title:0 "Pa©¢ª²» Ho¢¥opo¦"
+ develop_novgorod_desc:0 "Ho¢¥opo¦ c²o®ªµa °a·e« pec±³ ®ª¬ª, °³¨°o ±o¢ºcª²» pa©¢ª²ªe °a·e« µe°²pa®»°o« ¢o®oc²ª, ¶²o º ³cª®ª²» °a·e ²op¥o¢oe ¢®ª÷°ªe."
+ develop_neva_title:0 "Pa©¢ª²» He¢³"
+ develop_neva_desc:0 "›¨°a÷ Kape®ª÷ ª¯ee² ¢ºxo¦ ¬ €a®²ª«c¬o¯³ ¯op¾, °³¨°o pa©¢ª²» ¼²³ Bo®oc²», ¶²o º ³cª®ª²» °a·e ²op¥o¢oe ¢®ª÷°ªe."
+ develop_karela_title:0 "Pa©¢ª²» Kape®ª¾"
+ develop_karela_desc:0 "Ce¢ep°a÷ Kape®ª÷ ª¯ee² ±poª©¢o¦ª² ¯°o¨ec²¢o ²o¢apo¢, ¬o²opº¯ª ¯º c¯o¨e¯ ¢º¥o¦°o ±po¦a²» ¢ €a®²ª«c¬o¯ pe¥ªo°e, c²oª² pa©¢ª²» ¼²o² pe¥ªo° ¶²o º ³cª®ª²» °a·e ²op¥o¢oe ¢®ª÷°ªe."
+ develop_kola_title:0 "Pa©¢ª²» ‰o¯op»e ª Ko®»"
+ develop_kola_desc:0 "Ko®»c¬ª« ±o®³oc²po¢ ª pe¥ªo° ‰o¯op»e ¢ºxo¦÷²  epe¥a¯ª °a €e®oe ¯ope, ec®ª ¯º c¬o°µe°²pªp³e¯c÷, °a pa©¢ª²ªe ¼²ªx ±po¢ª°µª«, ²o ª ²op¥o¢a²» ¢ €e®o¯ ¯ope c²a°e² ¼´´e¬²ª¢°ee."
+ 
+ great_novgorod:0 "Be®ª¬ª« Ho¢¥opo¦"
+ great_novgorod_ADJ:0 "Be®ª¬o°o¢¥opo¦c¬"
+
+ develop_port_neva_title:0 "Pa©¢ª²» ±op² °a He¢e"
+ develop_port_neva_desc:0 "‰op² °a He¢e ²pe ³e² ¢®o¨e°ª«, ¶²o º ³cª®ª²» ²op¥o¢®¾ c  a®²ª«c¬ª¯ª ¥oc³¦apc²¢a¯ª."
+ 
+ return_vyborg_title:0 "Bep°³²» Bº op¥"
+ return_vyborg_desc:0 "Mº ¦o®¨°º ¢ep°³²» ©e¯®ª °a ¬o²opºx c²oª² ¬pe±oc²» Bº op¥, ¼²ª ©e¯®ª ¯º ±o²ep÷®ª ¢ 1293 ¥o¦³. ™²a ²eppª²opª÷ ÷¢®÷e²c÷ ¬®¾¶e¢o« ¦®÷ ²op¥o¢®ª ¢  a®²ª«c¬o¯ ¯ope, ¯º ¦o®¨°º ¢ep°³²» ªx, ¶²o º ³cª®ª²» °a·³ ²op¥o¢®¾ °a  a®²ª«c¬o¯ °a±pa¢®e°ªª."
+ upgrade_five_ends_title:0 "‹®³¶·ª²» ‰÷²» Ko°µo¢"
+ upgrade_five_ends_desc:0 "‰÷²» Ko°µo¢ - ¼²o a¦¯ª°ªc²pa²ª¢°o-²eppª²opªa®»°oe ³c²po«c²¢o Ho¢¥opo¦a, ¢ec» ¥opo¦ ±o¦e®ë° °a ±÷²» pa«o°o¢, ¬a¨¦º« ª© ¬o²opºx ª¯ee² c¢o¾ pa²³·³, o ¸ec²¢e°°³¾ ±e¶a²», c¢o¾ c±eµªa®ª©aµª¾, c¢oë °ace®e°ªe ª c¢oªx ±pe¦c²a¢ª²e®e« ¢ Be¶e."
+
+ develop_port_arkhangelsk_title:0 "Pa©¢ª²» ²op¥o¢®¾ ¢ Apxa°¥e®»c¬e"
+ develop_port_arkhangelsk_desc:0 "Top¥o¢®÷ ¢  e®o¯ ¯ope ±pª°ocª² °e±®ox³¾ ±pª º®», ¯º ¦o®¨°º pa©¢ª²» °a· ±op², ¶²o º ¯a¬cª¯ª©ªpo¢a²» °a·³ ±pª º®»."
+ conquer_tver_title:0 "…a¢oe¢a²» T¢ep»"
+ conquer_tver_desc:0 "T¢ep» °a· ªc²opª¶ec¬ª« ±po²ª¢°ª¬, ±oc®e °e³¦a¶°ºx ¢o«° o° oc®a , ©ax¢a²ª²» e¥o  ³¦e² ®e¥¬o."
+ invade_moscow_title:0 "B²op¨e°ªe ¢ Moc¬¢³"
+ invade_moscow_desc:0 "H³¨°o ±o¦¥o²o¢ª²»c÷ ¬ ¢²op¨e°ª¾ ¢ P³cc¬ªe ©e¯®ª. Ce«¶ac Op¦a c®a a ¬a¬ °ª¬o¥¦a ±pe¨¦e, ±pª·®o ¢pe¯÷ ±pe¬pa²ª²» ¬°÷¨ec¬ªe ¯e¨¦o³co ªµº, co pa¢ ¢o«c¬a ¯º ¯o¨e¯ o ¹e¦ª°ª²» P³cc¬ªe ©e¯®ª ¢ e¦ª°oe ¥oc³¦apc²¢o."
+ conquer_pskov_title:0 "‰pªcoe¦ª°ª²» ‰c¬o¢"
+ conquer_pskov_desc:0 "B 1348 ¥o¦³ ‰c¬o¢ ±o®³¶ª® °e©a¢ªcª¯oc²» o² Ho¢¥opo¦a. B 1399 ¥o¦³ ‰c¬o¢ o ¹÷¢ª® ce ÷ Bacca®o¯ Moc¬¢º. Mº ¦o®¨°º ¢ep°³²» ±o¥pa°ª¶°ºe ©e¯®ª o pa²°o, ¶²o º oc®a ª²» Moc¬¢³."
+ conquer_ryazan_title:0 "‰pªcoe¦ª°ª²» P÷©a°»"
+ conquer_ryazan_desc:0 "P÷©a°c¬oe ¬°÷¨ec²¢o - ¼²o ¬p³±°oe ¬°÷¨ec²¢o °a ¾¨°o« ¥pa°ªµe Moc¬¢º, c®e¦³e² ©ax¢a²ª²» e¥o, ¶²o º ±o®³¶ª²» ±pªe¯³¸ec²¢o °a¦ Moc¬¢o«."
+ conquer_yaroslavl_title:0 "…a¢oe¢a²» ×poc®a¢®»"
+ conquer_yaroslavl_desc:0 "×poc®a¢®» - ¼²o °e o®»·oe ¬°÷¨ec²¢o ¯e¨¦³ °a¯ª ª Moc¬¢o«, ®³¶·e ©ax¢a²ª²» ªx pa°»·e ¶e¯ Moc¬¢a ©ax¢a²ª² ªx."

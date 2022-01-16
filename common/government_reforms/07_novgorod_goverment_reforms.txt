@@ -207,7 +207,7 @@ nov_enligment_aristocrats_reform = {
 			has_reform = republican_authoritarianism_reform 
 		}
 		NOT = {
-			has_reform = nov_destroy_aristocrats 
+			has_reform = nov_destroy_aristocrats_reform 
 		}
 		is_institution_enabled = enlightenment
 	}
@@ -234,7 +234,7 @@ nov_strong_aristocrats_reform = {
 			has_reform = republicanism_reform 
 		}
 		NOT = {
-			has_reform = nov_destroy_aristocrats 
+			has_reform = nov_destroy_aristocrats_reform 
 		}
 	}	
 

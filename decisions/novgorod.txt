@@ -107,7 +107,7 @@ country_decisions = {
 				has_faction = mr_aristocrats
 				has_faction = nov_enligment_aristocrats
 				has_faction = nov_strong_aristocrats
-				has_reform  = nov_destroy_aristocrats
+				has_reform  = nov_destroy_aristocrats_reform
 			}
 			not = {
 				or = {
@@ -367,7 +367,7 @@ country_decisions = {
 				tag = GNR
 			}
 			not = {
-				has_reform = nov_destroy_aristocrats
+				has_reform = nov_destroy_aristocrats_reform
 			}
 		}
 

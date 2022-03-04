@@ -18,6 +18,7 @@ rus_forming_republic = {
 	boost_income = yes
 
 	has_term_election = yes
+	
 	states_general_mechanic = {
 		statists = {
 			diplomatic_reputation = 1

@@ -13,6 +13,32 @@ annexationaction = {
 					value = 190
 				}
 			}
+			or = {
+				and = {
+					ROOT = {
+						government = monarchy
+					}
+					FROM = {
+						government = monarchy
+					}
+				}
+				and = {
+					ROOT = {
+						government = republic
+					}
+					FROM = {
+						government = republic
+					}
+				}
+				and = {
+					ROOT = {
+						government = monastic
+					}
+					FROM = {
+						government = monastic
+					}
+				}
+			}
 		}
 
 

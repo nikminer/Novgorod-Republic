@@ -1,0 +1,108 @@
+rebel_novgorod = {
+	potential = {
+		NOT ={
+			government = republic
+		}
+		owns = 310
+		310 = {
+			or = {
+				has_great_project = {
+					type = five_ends
+					tier = 1
+				}
+				has_great_project = {
+					type = five_ends
+					tier = 2
+				}
+				has_great_project = {
+					type = five_ends
+					tier = 3
+				}
+			}
+		}
+	}
+
+	can_start = {
+		310 = {
+			or = {
+				has_great_project = {
+					type = five_ends
+					tier = 1
+				}
+				has_great_project = {
+					type = five_ends
+					tier = 2
+				}
+				has_great_project = {
+					type = five_ends
+					tier = 3
+				}
+			}
+		}
+	}
+
+	can_stop = {
+		
+	}
+
+	can_end = {
+		310 = {
+			NOT = {
+				has_great_project = {
+					type = five_ends
+					tier = 0
+				}			
+			}
+		}
+	}
+
+	progress = {
+		modifier = {
+			# stability >= 2?  
+			factor = 0
+			stability = 2
+		}
+		modifier = {
+			# stability >= -1 && stability < 2? 
+			factor = 1
+			stability = -1
+			not = {
+				stability = 2
+			}
+		}
+		modifier = {
+			# stability < -1?  
+			factor = 3
+			not = {
+				stability = -1
+			}
+		}
+	}
+
+	on_start = civil_war.1
+	on_end = civil_war.100
+	
+	on_monthly = {
+		events = {
+			flavor_lxa.1
+			flavor_lxa.2
+			flavor_lxa.3
+		}
+		random_events = { 
+			1000 = 0
+			100 = civil_war.2
+			100 = civil_war.3
+			100 = civil_war.5
+			100 = civil_war.6
+			100 = civil_war.7
+			100 = civil_war.8
+			100 = civil_war.9
+			100 = civil_war.10
+			100 = civil_war.11
+			100 = civil_war.12
+			100 = civil_war.13
+		
+		}
+	}
+
+}

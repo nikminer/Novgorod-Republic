@@ -1,4 +1,4 @@
-version="0.6"
+version="0.7"
 tags={
 	"Missions And Decisions"
 	"New Nations"
@@ -8,5 +8,5 @@ tags={
 }
 name="Novgorod Republic"
 picture="thumbnail.png"
-supported_version="1.32.*"
+supported_version="1.33.*"
 remote_file_id="2559017207"

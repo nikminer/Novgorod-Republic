@@ -52,5 +52,137 @@ country_decisions = {
 				NOT = { years_of_income = 1.25 }
 			}
 		}
-	}	
+	}
+	
+	destroy_novgorod = {
+		potential = {
+			NOT = {
+				OR = {
+					tag = NOV
+					tag = GNR
+				}
+				government = republic
+			}
+			310 = {
+				or = {
+					has_great_project = {
+						type = five_ends
+						tier = 1
+					}
+					has_great_project = {
+						type = five_ends
+						tier = 2
+					}
+					has_great_project = {
+						type = five_ends
+						tier = 3
+					}
+				}
+			}
+		}
+
+		allow = {
+			has_disaster_progress = {
+				disaster = rebel_novgorod
+				value = 50
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					310 = {
+						has_great_project = {
+							type = five_ends
+							tier = 3
+						}
+					}
+				}
+				add_treasury = 1500
+			}
+
+			if = {
+				limit = {
+					310 = {
+						has_great_project = {
+							type = five_ends
+							tier = 2
+						}
+					}
+				}
+				add_treasury = 1000
+			}
+
+			if = {
+				limit = {
+					310 = {
+						has_great_project = {
+							type = five_ends
+							tier = 1
+						}
+					}
+				}
+				add_treasury = 500
+			}
+
+
+			310 = {
+				add_devastation	= 1
+				set_base_manpower = 1
+				set_base_production = 1
+				set_base_tax = 1
+				set_great_project_tier_1 = yes
+
+				if = {
+					limit = {
+						has_great_project = {
+							type = five_ends
+							tier = 1
+						}
+					}
+
+					add_great_project_tier = {
+						type = five_ends
+						tier = -1
+					}
+				}
+
+				if = {
+					limit = {
+						has_great_project = {
+							type = five_ends
+							tier = 2
+						}
+					}
+
+					add_great_project_tier = {
+						type = five_ends
+						tier = -2
+					}
+				}
+
+				if = {
+					limit = {
+						has_great_project = {
+							type = five_ends
+							tier = 3
+						}
+					}
+
+					add_great_project_tier = {
+						type = five_ends
+						tier = -3
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 1.25 }
+			}
+		}
+	}
 }

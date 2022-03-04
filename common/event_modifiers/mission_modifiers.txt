@@ -9,13 +9,13 @@ trade_develop = {
 }
 
 five_ends_tire2 = {
-	trade_efficiency = 0.2
-	development_cost = -0.2
+	trade_efficiency = 0.15
+	development_cost = -0.15
 }
 
 five_ends_tire3 = {
-	trade_efficiency = 0.3
-	development_cost = -0.3
+	trade_efficiency = 0.2
+	development_cost = -0.2
 }
 
 kremlin_modifier = {

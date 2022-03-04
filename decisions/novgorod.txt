@@ -63,7 +63,6 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			has_mission = nov_conquer_princes
 			owns_core_province = 295
 			owns_core_province = 310
 			owns_core_province = 312
@@ -80,7 +79,7 @@ country_decisions = {
 			GNR = { 
 				set_government_rank = 2 
 				change_government = rus_forming
-				add_government_reform = rus_forming_republic
+				add_government_reform = [rus_forming_republic]
 				override_country_name = GNR
 			}
 			

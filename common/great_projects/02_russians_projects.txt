@@ -60,8 +60,18 @@ five_ends = {
 			local_build_time = -0.1
 		}
 		country_modifiers = { 
-			republican_tradition = 1
+
 			trade_efficiency = 0.1
+			if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 0.5
+			}
+			else
+			{
+				legitimacy = -0.5
+			}
 		}
 		on_upgraded = { }
 	}
@@ -81,8 +91,17 @@ five_ends = {
 			local_build_time = -0.2
 		}
 		country_modifiers = { 
-			republican_tradition = 3
 			trade_efficiency = 0.3
+			if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 1
+			}
+			else
+			{
+				legitimacy = -1
+			}
 		}
 		on_upgraded = { 
 			
@@ -103,8 +122,17 @@ five_ends = {
 			local_build_time = -0.5
 		}
 		country_modifiers = { 
-			republican_tradition = 5
 			trade_efficiency = 0.5
+			if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 1.5
+			}
+			else
+			{
+				legitimacy = -1.5
+			}
 		}
 		on_upgraded = { }
 	}

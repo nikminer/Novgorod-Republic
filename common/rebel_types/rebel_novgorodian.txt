@@ -1,0 +1,99 @@
+rebel_novgorodian = {
+
+	color = { 50 85 210 }
+
+	area = nation 					
+	government = monarchy		
+	defection = none				
+	independence = none				
+	unit_transfer = yes
+	gfx_type = culture_province	
+	will_relocate = yes	
+	
+	resilient = no
+	reinforcing = yes
+	general = yes
+	smart = yes
+	
+	artillery = 0.2
+	infantry = 0.7
+	cavalry = 0.2
+	
+	morale = 1.1
+	
+	handle_action_negotiate = no
+	handle_action_stability = no
+	handle_action_build_core = no
+	handle_action_send_missionary = no		
+	
+	spawn_chance = {
+		factor = 1
+		modifier = {
+			factor = 10
+			owner = {
+				has_disaster = rebel_novgorod
+			}
+		}
+	}
+ 
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 10
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 4
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 6
+		}
+	}
+ 
+ 	siege_won_trigger = {
+ 	}
+	siege_won_effect = {
+	}
+	
+	can_negotiate_trigger = {
+		always = no
+	}
+	
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+	demands_description = "revolutionary_rebels_demand"
+		
+	demands_enforced_effect = {
+		change_tag = GNR
+		swap_non_generic_missions = yes
+		GNR = { 
+			set_government_rank = 2 
+			change_government = rus_forming
+			add_government_reform = [rus_forming_republic]
+			override_country_name = GNR
+		}
+		
+		add_prestige = -50
+		define_ruler = {
+			rebel = yes
+		}
+		set_country_flag = formed_russia_flag
+		change_government_reform_progress = -100000
+	}
+}

@@ -1,0 +1,1318 @@
+pskov_korm= {
+	start = 274
+	starting_tier = 1
+
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+
+	date = 1200.01.01
+	build_cost = 0
+	time = {
+		months = 0
+	}
+
+	type = monument
+
+	build_trigger = {
+		274 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	on_built = {
+		show_ambient_object = kremlin
+	}
+	
+	on_destroyed = {
+		hide_ambient_object = kremlin
+	}
+
+	can_use_modifiers_trigger = {
+		274 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	can_upgrade_trigger = {
+		274 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	keep_trigger = {
+	}
+
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.25
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_manpower_modifier = 1
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+
+		country_modifiers = {
+			global_regiment_cost = -0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+}
+
+rostov_kremlin = {
+	start = 4147
+	starting_tier = 0
+
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+
+	date = 1670.01.01
+	build_cost = 500
+	time = {
+		months = 60
+	}
+
+	type = monument
+
+	build_trigger = {
+		4147 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	on_built = {
+		show_ambient_object = kremlin
+	}
+	
+	on_destroyed = {
+		hide_ambient_object = kremlin
+	}
+
+	can_use_modifiers_trigger = {
+		4147 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	can_upgrade_trigger = {
+		4147 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	keep_trigger = {
+	}
+
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.25
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_manpower_modifier = 1
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+
+		country_modifiers = {
+			global_regiment_cost = -0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+}
+
+astrakhan_kremlin = {
+	start = 464
+	starting_tier = 0
+
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+
+	date = 1562.01.01
+	build_cost = 500
+	time = {
+		months = 60
+	}
+
+	type = monument
+
+	build_trigger = {
+		464 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	on_built = {
+		show_ambient_object = kremlin
+	}
+	
+	on_destroyed = {
+		hide_ambient_object = kremlin
+	}
+
+	can_use_modifiers_trigger = {
+		464 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	can_upgrade_trigger = {
+		464 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	keep_trigger = {
+	}
+
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.25
+		}
+
+		area_modifier = {
+			global_missionary_strength = 0.1
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_manpower_modifier = 1
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+
+		country_modifiers = {
+			global_regiment_cost = -0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+}
+
+tobol_kremlin = {
+	start = 1074
+	starting_tier = 0
+
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+
+	date = 1683.01.01
+	build_cost = 500
+	time = {
+		months = 60
+	}
+
+	type = monument
+
+	build_trigger = {
+		1074 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	on_built = {
+		show_ambient_object = kremlin
+	}
+	
+	on_destroyed = {
+		hide_ambient_object = kremlin
+	}
+
+	can_use_modifiers_trigger = {
+		1074 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	can_upgrade_trigger = {
+		1074 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	keep_trigger = {
+	}
+
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.25
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+			add_building = fort_15th
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_manpower_modifier = 1
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+
+		country_modifiers = {
+			global_regiment_cost = -0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+}
+
+nizhny_kremlin = {
+	start = 306
+	starting_tier = 0
+
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+
+	date = 1508.01.01
+	build_cost = 500
+	time = {
+		months = 60
+	}
+
+	type = monument
+
+	build_trigger = {
+		306 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	on_built = {
+		show_ambient_object = kremlin
+	}
+	
+	on_destroyed = {
+		hide_ambient_object = kremlin
+	}
+
+	can_use_modifiers_trigger = {
+		306 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	can_upgrade_trigger = {
+		306 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	keep_trigger = {
+	}
+
+
+	tier_0 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.25
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_manpower_modifier = 1
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+
+		country_modifiers = {
+			global_regiment_cost = -0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+}
+
+ryazan_kremlin = {
+	start = 301
+	starting_tier = 1
+
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+
+	date = 1095.01.01
+	build_cost = 0
+	time = {
+		months = 0
+	}
+
+	type = monument
+
+	build_trigger = {
+		301 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	on_built = {
+		show_ambient_object = kremlin
+	}
+	
+	on_destroyed = {
+		hide_ambient_object = kremlin
+	}
+
+	can_use_modifiers_trigger = {
+		301 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	can_upgrade_trigger = {
+		301 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	keep_trigger = {
+	}
+
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.25
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+			add_building = fort_15th
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_manpower_modifier = 1
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+
+		country_modifiers = {
+			global_regiment_cost = -0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+}
+
+tula_kremlin = {
+	start = 300
+	starting_tier = 0
+
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+
+	date = 1514.01.01
+	build_cost = 500
+	time = {
+		months = 60
+	}
+
+	type = monument
+
+	build_trigger = {
+		300 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	on_built = {
+		show_ambient_object = kremlin
+	}
+	
+	on_destroyed = {
+		hide_ambient_object = kremlin
+	}
+
+	can_use_modifiers_trigger = {
+		300 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	can_upgrade_trigger = {
+		300 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	keep_trigger = {
+		culture_group = east_slavic
+	}
+
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.25
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+			add_building = fort_15th
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_manpower_modifier = 1
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+
+		country_modifiers = {
+			global_regiment_cost = -0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+}
+
+kazan_kremlin = {
+	start = 1082
+	starting_tier = 0
+
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+
+	date = 1672.01.01
+	build_cost = 500
+	time = {
+		months = 60
+	}
+
+	type = monument
+
+	build_trigger = {
+		1082 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	on_built = {
+		show_ambient_object = kremlin
+	}
+	
+	on_destroyed = {
+		hide_ambient_object = kremlin
+	}
+
+	can_use_modifiers_trigger = {
+		culture_group = east_slavic
+	}
+
+	can_upgrade_trigger = {
+		culture_group = east_slavic
+	}
+
+	keep_trigger = {
+	}
+
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.25
+		}
+
+		area_modifier = {
+			global_missionary_strength = 0.1
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_manpower_modifier = 1
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+
+		country_modifiers = {
+			global_regiment_cost = -0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+}
+
+kronstadt = {
+	start = 33
+	starting_tier = 0
+
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+
+	date = 1733.01.01
+	build_cost = 500
+	time = {
+		months = 60
+	}
+
+	type = monument
+
+	build_trigger = {
+		33 = {
+			owner = {
+				culture_group = east_slavic
+			}
+		}
+	}
+
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		culture_group = east_slavic
+	}
+
+	can_upgrade_trigger = {
+		culture_group = east_slavic
+	}
+
+	keep_trigger = {
+	}
+
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			blockade_force_required = 0.5
+			hostile_disembark_speed = 0.5
+			block_slave_raid = yes
+			local_defensiveness = 0.15
+			local_sailors_modifier = 0.15
+		}
+
+		area_modifier = {
+			naval_morale = 0.1
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			blockade_force_required = 1.0
+			hostile_disembark_speed = 1.0
+			hostile_fleet_attrition = 5
+			block_slave_raid = yes
+			local_defensiveness = 0.25
+			local_sailors_modifier = 0.25
+		}
+
+		area_modifier = {
+			naval_morale = 0.2
+		}
+
+		country_modifiers = {
+			admiral_cost = -0.1
+			navy_tradition = 0.25
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			blockade_force_required = 1.5
+			hostile_disembark_speed = 1.5
+			hostile_fleet_attrition = 10
+			block_slave_raid = yes
+			local_defensiveness = 0.33
+			local_sailors_modifier = 1
+		}
+
+		area_modifier = {
+			naval_morale = 0.3
+		}
+
+		country_modifiers = {
+			global_sailors_modifier = 0.5
+			admiral_cost = -0.2
+			navy_tradition = 0.5
+		}
+
+		on_upgraded = {
+		}
+	}
+}

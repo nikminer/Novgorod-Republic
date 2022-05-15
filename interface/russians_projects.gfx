@@ -35,4 +35,13 @@ spriteTypes = {
 		name = "GFX_great_project_kazan_kremlin"
 		texturefile = "gfx//interface//great_projects//kazan_kremlin.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_veche_palace"
+		texturefile = "gfx//interface//great_projects//veche_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_kronstadt"
+		texturefile = "gfx//interface//great_projects//kronstadt.dds"
+	}
+	
 }

@@ -39,89 +39,88 @@ annexationaction = {
 					}
 				}
 			}
-		}
+		}		
+	}
 
-
-		condition = {
-			tooltip = ANNEX_NEED_GOVERNMENT
-			potential = {
-				FROM = {
-					vassal_of = ROOT
-				}
-				if = {
-					limit = {
-						ROOT = {
-							government = monarchy
-						}
-					}
-					FROM = {
-						not = {
-							government = monarchy
-						}
-					}
-				}
-				
-				if = {
-					limit = {
-						ROOT = {
-							government = republic
-						}
-					}
-					FROM = {
-						not = {
-							government = republic
-						}
-					}
-				}
-		
-				if = {
-					limit = {
-						ROOT = {
-							government = monastic
-						}
-					}
-					FROM = {
-						not = {
-							government = monastic
-						}
-					}
-				}
+	condition = {
+		tooltip = ANNEX_NEED_GOVERNMENT
+		potential = {
+			FROM = {
+				vassal_of = ROOT
 			}
-			allow = {
-				if = {
-					limit = {
-						ROOT = {
-							government = monarchy
-						}
-					}
-					FROM = {
+			if = {
+				limit = {
+					ROOT = {
 						government = monarchy
 					}
 				}
-				
-				if = {
-					limit = {
-						ROOT = {
-							government = republic
-						}
+				FROM = {
+					not = {
+						government = monarchy
 					}
-					FROM = {
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
 						government = republic
 					}
 				}
-		
-				if = {
-					limit = {
-						ROOT = {
-							government = monastic
-						}
+				FROM = {
+					not = {
+						government = republic
 					}
-					FROM = {
+				}
+			}
+	
+			if = {
+				limit = {
+					ROOT = {
 						government = monastic
 					}
 				}
-				
+				FROM = {
+					not = {
+						government = monastic
+					}
+				}
 			}
+		}
+		allow = {
+			if = {
+				limit = {
+					ROOT = {
+						government = monarchy
+					}
+				}
+				FROM = {
+					government = monarchy
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						government = republic
+					}
+				}
+				FROM = {
+					government = republic
+				}
+			}
+	
+			if = {
+				limit = {
+					ROOT = {
+						government = monastic
+					}
+				}
+				FROM = {
+					government = monastic
+				}
+			}
+			
 		}
 	}
 	#condition = {

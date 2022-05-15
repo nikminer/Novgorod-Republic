@@ -25,6 +25,11 @@ rebel_novgorod = {
 	can_start = {
 		has_any_disaster = no
 		NOT ={
+			OR = {
+				exists = NOV
+				exists = GNR
+				exists = RUR
+			}
 			government = republic
 		}
 		owns = 310

@@ -65,19 +65,8 @@ country_decisions = {
 				government = republic
 			}
 			310 = {
-				or = {
-					has_great_project = {
-						type = five_ends
-						tier = 1
-					}
-					has_great_project = {
-						type = five_ends
-						tier = 2
-					}
-					has_great_project = {
-						type = five_ends
-						tier = 3
-					}
+				has_great_project = {
+					type = five_ends
 				}
 			}
 		}
@@ -91,6 +80,7 @@ country_decisions = {
 
 		effect = {
 			add_manpower = -10
+			
 			if = {
 				limit = {
 					310 = {
@@ -126,56 +116,12 @@ country_decisions = {
 				}
 				add_treasury = 500
 			}
-
-
 			310 = {
+				destroy_great_project = five_ends
 				add_devastation	= 1
 				set_base_manpower = 1
 				set_base_production = 1
 				set_base_tax = 1
-				set_great_project_tier_1 = yes
-
-				if = {
-					limit = {
-						has_great_project = {
-							type = five_ends
-							tier = 1
-						}
-					}
-
-					add_great_project_tier = {
-						type = five_ends
-						tier = -1
-					}
-				}
-
-				if = {
-					limit = {
-						has_great_project = {
-							type = five_ends
-							tier = 2
-						}
-					}
-
-					add_great_project_tier = {
-						type = five_ends
-						tier = -2
-					}
-				}
-
-				if = {
-					limit = {
-						has_great_project = {
-							type = five_ends
-							tier = 3
-						}
-					}
-
-					add_great_project_tier = {
-						type = five_ends
-						tier = -3
-					}
-				}
 			}
 		}
 

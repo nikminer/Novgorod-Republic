@@ -265,3 +265,106 @@ veche_palace = {
 		}
 	}
 }
+
+sophia_cathedral = {
+	start = 310
+	starting_tier = 2
+
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+
+	date = 1050.01.01
+	build_cost = 0
+	time = {
+		months = 0
+	}
+
+	type = monument
+
+	build_trigger = {
+	}
+	
+	on_built = {
+	}
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	}
+
+	keep_trigger = {
+	}
+
+	can_upgrade_trigger = {
+		culture_group = east_slavic
+	}
+
+	tier_0 = {
+		upgrade_time = { 
+			months = 0
+		}
+		cost_to_upgrade = { 
+			factor = 0
+		}
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+
+	tier_1 = {
+		upgrade_time = { 
+			months = 150
+		}
+		cost_to_upgrade = { 
+			factor = 100
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = { 
+		}
+		country_modifiers = { 
+			innovativeness_gain = 0.05
+		}
+		on_upgraded = { }
+	}
+
+	tier_2 = {
+		upgrade_time = { 
+			months = 120
+		}
+		cost_to_upgrade = { 
+			factor = 400
+		}
+		province_modifiers = {
+		}
+		area_modifier = { 
+		}
+		country_modifiers = { 
+			innovativeness_gain = 0.1
+			institution_spread_from_true_faith = 0.1
+		}
+		on_upgraded = { 
+			
+		}
+	}
+	tier_3 = {
+		upgrade_time = { 
+			months = 150
+		}
+		cost_to_upgrade = { 
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = { 
+		}
+		country_modifiers = { 
+			innovativeness_gain = 0.15
+			missionaries = 1
+			institution_spread_from_true_faith = 0.2
+		}
+		on_upgraded = { }
+	}
+}

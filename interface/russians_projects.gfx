@@ -44,4 +44,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//kronstadt.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_great_project_sophia_cathedral"
+		texturefile = "gfx//interface//great_projects//sophia_cathedral.dds"
+	}
 }

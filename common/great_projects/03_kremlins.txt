@@ -1184,7 +1184,7 @@ kronstadt = {
 			owner = {
 				culture_group = east_slavic
 				not = {
-					owner = NOV
+					tag = NOV
 				}
 			}
 		}

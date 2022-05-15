@@ -20,6 +20,7 @@ rus_forming = {
         state_reform = {
             reforms = {
                 rus_self_government_reform,
+                rus_nobility_reform
             }
         }
 

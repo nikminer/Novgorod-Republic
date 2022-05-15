@@ -1,4 +1,4 @@
-rus_expand_diplomat = {
+rus_expand_diplomat_reform = {
 
 	potential = {
 		NOT = {
@@ -18,7 +18,7 @@ rus_expand_diplomat = {
 	diplomatic_reputation = 1
 }
 
-rus_expand_merchant = {
+rus_expand_merchant_reform = {
 
 	potential = {
 		NOT = {
@@ -38,7 +38,7 @@ rus_expand_merchant = {
 	trade_efficiency = 0.1
 }
 
-rus_money = {
+rus_money_reform = {
 	potential = {
 		NOT = {
             tag = GNR
@@ -58,7 +58,7 @@ rus_money = {
 	trade_efficiency = 0.1
 }
 
-rus_save_money = {
+rus_save_money_reform = {
 
 	potential = {
 		NOT = {
@@ -79,7 +79,7 @@ rus_save_money = {
 	global_unrest = -2
 }
 
-rus_private_land_ownership = {
+rus_private_land_ownership_reform = {
 
 	potential = {
 		NOT = {
@@ -99,7 +99,7 @@ rus_private_land_ownership = {
 	manpower_recovery_speed = -0.1
 }
 
-rus_serfdom = {
+rus_serfdom_reform = {
 	potential = {
 		NOT = {
             tag = GNR
@@ -124,7 +124,7 @@ rus_serfdom = {
 	production_efficiency = -0.1
 }
 
-rus_self_government = {
+rus_self_government_reform = {
 	
 	potential = {
 		NOT = {
@@ -145,3 +145,26 @@ rus_self_government = {
 	build_time = -0.1
 }
 
+
+rus_nobility_reform = {
+	
+	potential = {
+		NOT = {
+            tag = GNR
+        }	
+		OR = {
+			tag = RUS
+			tag = RUR
+		}
+		has_country_flag = rus_nobility_reform
+	}	
+	trigger = {
+		has_country_flag = rus_nobility_reform
+	}
+
+	global_unrest = 2
+	build_cost = 0.1
+	global_tax_modifier = 0.1
+	army_tradition = 0.1
+	free_leader_pool = 1
+}

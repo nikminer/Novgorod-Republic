@@ -1188,6 +1188,16 @@ kronstadt = {
 	}
 
 	on_built = {
+		if = {
+			limit = {
+				not = {
+					has_country_flag = relocated_capital_st_petersburg
+				}
+			}
+			33 = {
+				change_province_name = "Kronstadt"
+			}
+		}
 	}
 	
 	on_destroyed = {

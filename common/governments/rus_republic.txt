@@ -4,9 +4,10 @@ rus_republic = {
     color = { 65 155 220 }
     
     reform_levels = {
-        oligarchy_merchant_class_noble_elite = {
+        pillars_of_republic = {
 			reforms = {
-				russian_republic
+				regional_veche,
+				council_of_lords
 			}
 		}
 		republican_virtues = {

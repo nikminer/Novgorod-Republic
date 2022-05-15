@@ -138,10 +138,7 @@ veche_palace = {
 		culture_group = east_slavic
 		province_is_or_accepts_culture = yes
 		owner = {
-			or = {
-				tag = RUR
-				tag = GNR
-			}
+			tag = RUR
 		}
 	}
 

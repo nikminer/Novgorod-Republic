@@ -1172,9 +1172,9 @@ kronstadt = {
 	move_days_per_unit_distance = 1
 
 	date = 1733.01.01
-	build_cost = 500
+	build_cost = 200
 	time = {
-		months = 60
+		months = 20
 	}
 
 	type = monument
@@ -1183,6 +1183,9 @@ kronstadt = {
 		33 = {
 			owner = {
 				culture_group = east_slavic
+				not = {
+					owner = NOV
+				}
 			}
 		}
 	}
@@ -1237,7 +1240,7 @@ kronstadt = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		cost_to_upgrade = {

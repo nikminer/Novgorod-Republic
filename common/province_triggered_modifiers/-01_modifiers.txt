@@ -19,7 +19,6 @@ wild_field = {
 	}
 	
 	on_deactivation = {
-		
 		OR = {
 			development = 15
 			has_building = fort_15th

@@ -116,8 +116,13 @@ country_decisions = {
 				}
 				add_treasury = 500
 			}
+			
+			destroy_great_project = {
+				type = five_ends
+			}
+
 			310 = {
-				destroy_great_project = five_ends
+				
 				add_devastation	= 1
 				set_base_manpower = 1
 				set_base_production = 1

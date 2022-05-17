@@ -87,10 +87,6 @@ country_decisions = {
 			
 			set_country_flag = formed_russia_flag
 		}
-
-		hidden_effect = {
-			change_government_reform_progress = -100000
-		}
 	}
 
 	

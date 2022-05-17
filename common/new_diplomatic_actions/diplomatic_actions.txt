@@ -13,13 +13,13 @@ change_government_vassal = {
     
     is_allowed = {
         FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 190
-			}
 			years_in_vassalage_under = {
 				who = ROOT
 				years = 5
+			}
+			has_opinion = {
+				who = ROOT
+				value = 190
 			}
 		}
 	
@@ -97,7 +97,11 @@ change_government_vassal = {
 			}
 		}
 
-		liberty_desire = -20
+		liberty_desire = 20
+		add_opinion = {
+			who = FROM
+			modifier = changed_government
+		}
     }
 }
 

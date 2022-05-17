@@ -32,10 +32,10 @@ annexationaction = {
 				}
 				and = {
 					ROOT = {
-						government = monastic
+						government = theocracy
 					}
 					FROM = {
-						government = monastic
+						government = theocracy
 					}
 				}
 			}
@@ -77,12 +77,12 @@ annexationaction = {
 			if = {
 				limit = {
 					ROOT = {
-						government = monastic
+						government = theocracy
 					}
 				}
 				FROM = {
 					not = {
-						government = monastic
+						government = theocracy
 					}
 				}
 			}
@@ -113,11 +113,11 @@ annexationaction = {
 			if = {
 				limit = {
 					ROOT = {
-						government = monastic
+						government = theocracy
 					}
 				}
 				FROM = {
-					government = monastic
+					government = theocracy
 				}
 			}
 			

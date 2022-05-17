@@ -244,7 +244,7 @@ tr_novgorod_2 = {
 	has_country_shield = yes
 
 	upgrade_five_ends = {
-		icon = new_pilings
+		icon = five_ends_mission
 		position = 1
 		provinces_to_highlight = {
 			province_id = 310
@@ -253,8 +253,8 @@ tr_novgorod_2 = {
 		trigger = {
 			310 = {
 				has_great_project = {
-					type = monument
-					tier = 2
+					type = five_ends
+					tier = 3
 				}
 			}
 		}

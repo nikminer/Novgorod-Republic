@@ -6,7 +6,7 @@ rus_republic = {
     reform_levels = {
         pillars_of_republic = {
 			reforms = {
-				regional_veche,
+				regional_veche
 				council_of_lords
 			}
 		}
@@ -103,12 +103,5 @@ rus_republic = {
 				nov_new_political_streams
 			}
 		}
-    }
-	exclusive_reforms = {
-		russian_republic
-	}
-    
-    legacy_government = {
-        russian_republic
     }
 }

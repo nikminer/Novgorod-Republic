@@ -1193,8 +1193,10 @@ kronstadt = {
 	on_built = {
 		if = {
 			limit = {
-				not = {
-					has_country_flag = relocated_capital_st_petersburg
+				owner = {
+					not = {
+						has_country_flag = relocated_capital_st_petersburg
+					}
 				}
 			}
 			33 = {

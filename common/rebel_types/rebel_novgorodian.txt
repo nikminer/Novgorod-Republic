@@ -94,6 +94,6 @@ rebel_novgorodian = {
 			rebel = yes
 		}
 		set_country_flag = formed_russia_flag
-		change_government_reform_progress = -100000
+		change_government_reform_progress = -800
 	}
 }

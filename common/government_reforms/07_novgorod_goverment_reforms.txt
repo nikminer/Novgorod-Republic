@@ -146,13 +146,9 @@ regional_veche = {
 			russian_mechanic
 		}
 	}
-
-	claim_states = yes
-	can_use_trade_post = yes
+	
 	can_form_trade_league = yes
 	boost_income = yes
-
-	has_parliament = yes
 	
 	effect = {
 		country_event = { 
@@ -168,6 +164,9 @@ regional_veche = {
 			mr_traders
 			mr_guilds
 		}
+		claim_states = yes
+		can_use_trade_post = yes
+		has_parliament = yes
 	}
 }
 
@@ -202,8 +201,6 @@ council_of_lords = {
 		}
 	}
 
-	claim_states = yes
-	can_use_trade_post = yes
 	can_form_trade_league = yes
 	boost_income = yes
 
@@ -215,6 +212,13 @@ council_of_lords = {
 
 	effect = {
 		custom_tooltip = council_of_lords_tooltip
+	}
+	
+	conditional = {
+		allow = { 
+		}
+		claim_states = yes
+		can_use_trade_post = yes
 	}
 }
 

@@ -27,7 +27,7 @@ province_event = {
 			OR = {
 				has_government_attribute = is_merchant_republic
 				has_reform = veche_republic
-				has_reform = russian_republic
+				has_reform = regional_veche
 			}
 		}
 		NOT = { has_province_modifier = free_trade_of_goods }
@@ -180,7 +180,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 	}
 
@@ -309,13 +309,13 @@ province_event = {
 			OR = {
 				has_government_attribute = is_merchant_republic
 				has_reform = veche_republic
-				has_reform = russian_republic
+				has_reform = regional_veche
 			}
 		}
 		NOT = { has_province_modifier = strong_guild }
 		NOT = {
 			has_trade_modifier = {
-				who = root
+				who = ROOT
 				key = allowed_imports
 			}
 		}
@@ -470,7 +470,7 @@ province_event = {
 			OR = {
 				has_government_attribute = is_merchant_republic
 				has_reform = veche_republic
-				has_reform = russian_republic
+				has_reform = regional_veche
 			}
 		}
 		NOT = { has_province_modifier = influential_nobles }
@@ -632,7 +632,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		NOT = { has_country_modifier = paranoid_recruitment }
 	}
@@ -817,7 +817,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		NOT = { has_country_modifier = foreign_guild_infiltrated }
 		NOT = { has_country_modifier = guilds_compromised }
@@ -984,7 +984,7 @@ province_event = {
 			OR = {
 				has_government_attribute = is_merchant_republic
 				has_reform = veche_republic
-				has_reform = russian_republic
+				has_reform = regional_veche
 			}
 		}
 		NOT = { has_province_modifier = trade_with_neighbor }
@@ -1145,7 +1145,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 	}
 
@@ -1293,7 +1293,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		any_rival_country = {
 			NOT = { war_with = ROOT }
@@ -1454,7 +1454,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		or = {
 			faction_in_power = mr_guilds
@@ -1529,7 +1529,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		or = {
 			faction_in_power = mr_traders
@@ -1590,7 +1590,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		or = {
 			faction_in_power = mr_aristocrats
@@ -1666,7 +1666,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		NOT = { faction_in_power = mr_guilds }
 	}
@@ -1727,7 +1727,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		NOT = { faction_in_power = mr_traders }
 	}
@@ -1779,7 +1779,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		NOT = { faction_in_power = mr_aristocrats }
 	}
@@ -1844,7 +1844,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		or = {
 			faction_in_power = mr_guilds
@@ -1880,7 +1880,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		or = {
 			faction_in_power = mr_traders
@@ -1914,7 +1914,7 @@ country_event = {
 		has_dlc = "Res Publica"
 		OR = {
 			has_government_attribute = is_merchant_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		or = {
 			faction_in_power = mr_aristocrats
@@ -1955,7 +1955,7 @@ province_event = {
 			OR = {
 				has_government_attribute = is_merchant_republic
 				has_reform = veche_republic
-				has_reform = russian_republic
+				has_reform = regional_veche
 			}
 			NOT = { 
 				or = {
@@ -2002,7 +2002,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		NOT = { 
 			or = {
@@ -2043,7 +2043,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		NOT = { 
 			or = {
@@ -2087,7 +2087,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		NOT = { 
 			or = {
@@ -2155,7 +2155,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		NOT = { has_ruler_flag = republic_revolution }
 		or = {
@@ -2434,7 +2434,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		NOT = { has_ruler_flag = republic_revolution }
 		or ={
@@ -2691,7 +2691,7 @@ country_event = {
 		OR = {
 			has_government_attribute = is_merchant_republic
 			has_reform = veche_republic
-			has_reform = russian_republic
+			has_reform = regional_veche
 		}
 		OR = {
 			NOT = { has_ruler_flag = republic_revolution }

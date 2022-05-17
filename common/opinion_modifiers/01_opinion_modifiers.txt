@@ -1,0 +1,4 @@
+changed_government = {
+	opinion = -100
+	yearly_decay = 15
+}

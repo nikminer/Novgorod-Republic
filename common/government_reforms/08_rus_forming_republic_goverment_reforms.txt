@@ -18,19 +18,6 @@ rus_forming_republic = {
 	boost_income = yes
 
 	has_term_election = yes
-	
-	states_general_mechanic = {
-		statists = {
-			diplomatic_reputation = 1
-			global_unrest = -1
-			republican_tradition = 5
-		}
-		monarchists = {
-			prestige = 0.5
-			manpower_recovery_speed = -0.5
-			republican_tradition = -5
-		}
-	}
     
 	modifiers = {
 		global_unrest = 5
@@ -44,15 +31,26 @@ rus_forming_republic = {
 	}
 
 	conditional = {
+		allow = {
+		}
 		has_parliament = no
 		claim_states = no
 
 		can_use_trade_post = yes
 		can_form_trade_league = yes
-	}
 
-	removed_effect = {
-		#country_event = { id = dutch_republic.33 }
+		states_general_mechanic = {
+			statists = {
+				diplomatic_reputation = 1
+				global_unrest = -1
+				republican_tradition = 5
+			}
+			monarchists = {
+				prestige = 0.5
+				manpower_recovery_speed = -0.5
+				republican_tradition = -5
+			}
+		}
 	}
 }
 
@@ -225,8 +223,7 @@ rus_nobility_reform = {
 
 rus_veche_reform = {
 	icon = "ballot_box"
-	has_parliament = yes
-
+	
 	trigger = {
 		is_statists_in_power = yes  
 		has_reform = rus_private_land_ownership_reform
@@ -239,7 +236,7 @@ rus_veche_reform = {
 			change_government = rus_republic
 			override_country_name = RUR
 			set_government_rank = 3
-			change_government_reform_progress = -100000
+			change_government_reform_progress = -800
 		}		
 
 		if = {
@@ -270,7 +267,7 @@ rus_tsardom_reform = {
 
 		RUS = {
 			set_government_rank = 3
-			change_government_reform_progress = -100000
+			change_government_reform_progress = -800
 		}
 
 		country_event = { 

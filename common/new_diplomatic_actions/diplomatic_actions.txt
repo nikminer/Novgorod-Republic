@@ -96,11 +96,12 @@ change_government_vassal = {
 				change_government = monastic
 			}
 		}
-
-		liberty_desire = 20
-		add_opinion = {
-			who = FROM
-			modifier = changed_government
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = changed_government
+				years = 15
+			}
 		}
     }
 }

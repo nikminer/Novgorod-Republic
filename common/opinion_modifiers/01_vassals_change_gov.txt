@@ -1,4 +1,6 @@
 changed_government = {
 	opinion = -100
-	yearly_decay = 15
+	yearly_decay = 2
+	min = -100
+	max = 0
 }

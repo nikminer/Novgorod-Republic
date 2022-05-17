@@ -22,7 +22,7 @@ novgorod_republic = {
 	trigger = {
 		or = {
 			tag = RUR
-			tag = NOV
+			has_reform = veche_republic
 			tag = GNR
 		}	
 		NOT = { is_revolutionary_republic_trigger = yes }

@@ -370,7 +370,7 @@ on_battle_won_country = {
 				}
 				add_faction_influence = {
 					faction = nov_strong_aristocrats
-					influence = 15
+					influence = 10
 				}
 			}
 		}
@@ -386,7 +386,7 @@ on_battle_won_country = {
 			}
 			add_faction_influence = {
 				faction = mr_aristocrats
-				influence = 10
+				influence = 5
 			}
 		}
 
@@ -397,7 +397,7 @@ on_battle_won_country = {
 			}
 			add_faction_influence = {
 				faction = nov_cossacks
-				influence = 10
+				influence = 5
 			}
 		}
 	}
@@ -818,7 +818,7 @@ on_general_recruited = {
 				}
 				add_faction_influence = {
 					faction = nov_enligment_aristocrats
-					influence = 7
+					influence = 3
 				}
 			}
 			if = {
@@ -827,7 +827,7 @@ on_general_recruited = {
 				}
 				add_faction_influence = {
 					faction = nov_strong_aristocrats
-					influence = 10
+					influence = 5
 				}
 			}
 		}
@@ -844,7 +844,7 @@ on_general_recruited = {
 			}
 			add_faction_influence = {
 				faction = mr_aristocrats
-				influence = 5
+				influence = 2
 			}
 		}
 
@@ -855,7 +855,7 @@ on_general_recruited = {
 			}
 			add_faction_influence = {
 				faction = nov_cossacks
-				influence = 10
+				influence = 3
 			}
 		}
 	}

@@ -79,8 +79,9 @@ country_decisions = {
 			GNR = { 
 				set_government_rank = 2 
 				change_government = rus_forming
-				add_government_reform = [rus_forming_republic]
+				add_government_reform = rus_forming_republic
 				override_country_name = GNR
+				change_government_reform_progress = -800
 			}
 			
 			add_prestige = 25

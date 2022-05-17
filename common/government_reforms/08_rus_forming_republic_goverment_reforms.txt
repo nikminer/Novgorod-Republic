@@ -22,7 +22,7 @@ rus_forming_republic = {
 	modifiers = {
 		global_unrest = 5
 		governing_capacity = 400
-		monthly_reform_progress = 5
+		monthly_reform_progress = 15
 	}
 
 	custom_attributes = {

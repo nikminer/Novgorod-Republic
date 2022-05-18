@@ -1,0 +1,237 @@
+regional_veche = {
+	icon = "parliament_hall"
+	republic = yes
+	duration = 3
+	
+	potential = {
+		tag=RUR
+	}
+	
+	allow_convert = yes
+	allow_normal_conversion = yes
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 250
+	
+	rulers_can_be_generals = no
+	royal_marriage = no
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	modifiers = {
+		governing_capacity = 300
+		global_manpower_modifier = 0.20
+		global_autonomy = -0.05
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+	
+	can_form_trade_league = yes
+	boost_income = yes
+	
+	effect = {
+		country_event = { 
+			id = creating_parliament.1 
+		}
+	}
+
+	conditional = {
+		allow = { 
+		}
+		factions = {
+			mr_aristocrats
+			mr_traders
+			mr_guilds
+		}
+		claim_states = yes
+		can_use_trade_post = yes
+		has_parliament = yes
+	}
+}
+
+council_of_lords = {
+	icon = "revolutionary_council_reform"
+	republic = yes
+	duration = 3
+
+	potential = {
+		tag=RUR
+	}
+
+	allow_convert = yes
+	allow_normal_conversion = yes
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 250
+
+	rulers_can_be_generals = yes
+	royal_marriage = yes
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+
+	can_form_trade_league = yes
+	boost_income = yes
+
+	modifiers = {
+		governing_capacity = 300
+		advisor_cost = -0.5
+		advisor_pool = 1
+	}
+
+	effect = {
+		custom_tooltip = council_of_lords_tooltip
+	}
+	
+	conditional = {
+		allow = { 
+		}
+		factions = {
+			mr_aristocrats
+			mr_traders
+			mr_guilds
+		}
+		claim_states = yes
+		can_use_trade_post = yes
+	}
+}
+
+
+#question_of_aristocrats
+nov_enligment_aristocrats_reform = {
+	icon = "nobleman"
+	potential = {
+		tag=RUR
+	}
+	
+	trigger = {
+		NOT = {
+			has_reform = republican_authoritarianism_reform 
+		}
+		NOT = {
+			has_reform = nov_destroy_aristocrats_reform 
+		}
+		is_institution_enabled = enlightenment
+	}
+	effect = {
+		set_country_flag = question_of_aristocrats
+		add_faction = nov_enligment_aristocrats
+	}
+
+	modifiers = {
+		innovativeness_gain = 0.1
+		technology_cost = -0.1
+		institution_growth = 1
+	}
+}
+
+nov_strong_aristocrats_reform = {
+	icon = "commander_king_reform"
+	potential = {
+		tag=RUR
+	}
+	
+	trigger = {
+		NOT = {
+			has_reform = republicanism_reform 
+		}
+		NOT = {
+			ROOT = {
+				has_reform = nov_destroy_aristocrats_reform 
+			}
+		}
+	}	
+
+	effect = {
+		set_country_flag = question_of_aristocrats
+		add_faction = nov_strong_aristocrats
+	}
+
+	modifiers = {
+		land_morale = 0.2
+		prestige = 0.2
+	}
+}
+
+nov_destroy_aristocrats_reform = {
+	icon = "man_on_podium"
+	potential = {
+		tag=RUR
+	}
+	allow_normal_conversion = no
+	trigger = {
+		NOT = {
+			has_reform = nepotism_reform 
+			or = {
+				faction_in_power = mr_aristocrats
+				faction_in_power = nov_enligment_aristocrats
+				faction_in_power = nov_strong_aristocrats
+			}
+		}
+		is_institution_enabled = enlightenment
+	}
+	modifiers = {
+		candidate_random_bonus = 2
+		yearly_corruption = -0.1
+
+		innovativeness_gain = 0.1
+		technology_cost = -0.2
+		institution_growth = 1
+		
+		army_tradition = 0.1
+		land_morale = -0.2
+		yearly_army_professionalism = 0.1
+		diplomatic_reputation = -1
+		prestige = 0.2
+		advisor_cost = -0.2
+	}
+	effect = {		
+		add_treasury = -1500
+		add_republican_tradition = -30 
+		set_country_flag = question_of_aristocrats
+		remove_faction = mr_aristocrats
+	}
+}
+
+nov_new_political_streams = {
+	icon = "revolutionary_republic"
+	potential = {
+		tag=RUR
+	}
+	
+	trigger = {
+		is_year = 1800
+	}
+	effect = {
+		
+		set_country_flag = new_political_streams
+		clr_country_flag = question_of_aristocrats
+		country_event = {
+			id = creating_parliament.4
+		}
+	}
+	factions = {
+		nov_conservo
+		nov_liberal
+		nov_reaction
+	}	
+}

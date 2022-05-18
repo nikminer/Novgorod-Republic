@@ -1,0 +1,319 @@
+on_reform_enacted = {
+	if = {
+		limit = { 
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+				has_reform = council_of_lords
+			}
+		}
+		remove_faction = mr_aristocrats
+		remove_faction = mr_traders
+		remove_faction = mr_guilds
+
+		#question_of_aristocrats
+		if = {
+			limit = {
+				has_country_flag = question_of_aristocrats
+			}
+			if = {
+				limit = {
+					has_reform = nov_enligment_aristocrats_reform
+				}
+				add_faction = nov_enligment_aristocrats
+				add_faction_influence = {
+					faction = nov_enligment_aristocrats
+					influence = 30
+				}
+			}
+			if = {
+				limit = {
+					has_reform = nov_strong_aristocrats_reform
+				}
+				add_faction = nov_strong_aristocrats
+				add_faction_influence = {
+					faction = nov_strong_aristocrats
+					influence = 30
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				not = {	
+					or = {
+						has_country_flag = question_of_aristocrats
+						has_country_flag = new_political_streams
+						has_reform = nov_destroy_aristocrats_reform
+					}
+				}
+			}
+			add_faction = mr_aristocrats
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = 20
+			}
+		}
+
+		#traders		
+		if = {
+			limit = { has_country_flag = tradecompany }
+			add_faction = nov_tradecompany
+			add_faction_influence = {
+				faction = nov_tradecompany
+				influence = 30
+			}
+		}
+
+		if = {
+			limit = { 
+				not = { 
+					or = {	
+						has_country_flag = tradecompany	
+						has_country_flag = new_political_streams
+					} 
+				} 
+			}
+			add_faction = mr_traders
+			add_faction_influence = {
+				faction = mr_traders
+				influence = 20
+			}
+		}
+
+		#guilds
+		if = {
+			limit = {
+				has_country_flag = manufacturing
+			}
+			add_faction = nov_manufacturing
+			add_faction_influence = {
+				faction = nov_manufacturing
+				influence = 30
+			}
+		}
+
+		if = {
+			limit = { has_country_flag = capitalist	}
+			add_faction = nov_capitalist
+			add_faction_influence = {
+				faction = nov_capitalist
+				influence = 30
+			}
+		}
+		
+		if = {
+			limit = {
+				not = {
+					or = {
+						has_country_flag = manufacturing
+						has_country_flag = capitalist
+						has_country_flag = new_political_streams
+					}
+				}
+			}
+			add_faction = mr_guilds
+			add_faction_influence = {
+				faction = mr_guilds
+				influence = 20
+			}
+		}
+
+	
+		#cassacks
+		if = {
+			limit = {
+				has_country_flag = HasCassacks
+			}
+			add_faction = nov_cossacks
+			add_faction_influence = {
+				faction = nov_cossacks
+				influence = 10
+			}
+		}
+
+
+		#new political streams
+		if = {
+			limit = { has_country_flag = new_political_streams }
+			add_faction = nov_conservo
+			add_faction = nov_liberal
+			add_faction = nov_reaction
+			add_faction_influence = {
+				faction = nov_conservo
+				influence = 30
+			}
+	
+			add_faction_influence = {
+				faction = nov_liberal
+				influence = 30
+			}
+	
+			add_faction_influence = {
+				faction = nov_reaction
+				influence = 30
+			}
+		}
+	}
+}
+
+on_reform_changed = {
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+				has_reform = council_of_lords
+			}
+		}
+		remove_faction = mr_aristocrats
+		remove_faction = mr_traders
+		remove_faction = mr_guilds
+
+		#question_of_aristocrats
+		if = {
+			limit = {
+				has_country_flag = question_of_aristocrats
+			}
+			if = {
+				limit = {
+					has_reform = nov_enligment_aristocrats_reform
+				}
+				add_faction = nov_enligment_aristocrats
+				add_faction_influence = {
+					faction = nov_enligment_aristocrats
+					influence = 30
+				}
+			}
+			if = {
+				limit = {
+					has_reform = nov_strong_aristocrats_reform
+				}
+				add_faction = nov_strong_aristocrats
+				add_faction_influence = {
+					faction = nov_strong_aristocrats
+					influence = 30
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				not = {	
+					or = {
+						has_country_flag = question_of_aristocrats
+						has_country_flag = new_political_streams
+						has_reform = nov_destroy_aristocrats_reform
+					}
+				}
+			}
+			add_faction = mr_aristocrats
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = 20
+			}
+		}
+
+		#traders		
+		if = {
+			limit = { has_country_flag = tradecompany }
+			add_faction = nov_tradecompany
+			add_faction_influence = {
+				faction = nov_tradecompany
+				influence = 30
+			}
+		}
+
+		if = {
+			limit = { 
+				not = { 
+					or = {	
+						has_country_flag = tradecompany	
+						has_country_flag = new_political_streams
+					} 
+				} 
+			}
+			add_faction = mr_traders
+			add_faction_influence = {
+				faction = mr_traders
+				influence = 20
+			}
+		}
+
+		#guilds
+		if = {
+			limit = {
+				has_country_flag = manufacturing
+			}
+			add_faction = nov_manufacturing
+			add_faction_influence = {
+				faction = nov_manufacturing
+				influence = 30
+			}
+		}
+
+		if = {
+			limit = { has_country_flag = capitalist	}
+			add_faction = nov_capitalist
+			add_faction_influence = {
+				faction = nov_capitalist
+				influence = 30
+			}
+		}
+		
+		if = {
+			limit = {
+				not = {
+					or = {
+						has_country_flag = manufacturing
+						has_country_flag = capitalist
+						has_country_flag = new_political_streams
+					}
+				}
+			}
+			add_faction = mr_guilds
+			add_faction_influence = {
+				faction = mr_guilds
+				influence = 20
+			}
+		}
+
+	
+		#cassacks
+		if = {
+			limit = {
+				has_country_flag = HasCassacks
+			}
+			add_faction = nov_cossacks
+			add_faction_influence = {
+				faction = nov_cossacks
+				influence = 10
+			}
+		}
+
+
+		#new political streams
+		if = {
+			limit = { has_country_flag = new_political_streams }
+			add_faction = nov_conservo
+			add_faction = nov_liberal
+			add_faction = nov_reaction
+			add_faction_influence = {
+				faction = nov_conservo
+				influence = 30
+			}
+	
+			add_faction_influence = {
+				faction = nov_liberal
+				influence = 30
+			}
+	
+			add_faction_influence = {
+				faction = nov_reaction
+				influence = 30
+			}
+		}
+	}
+}

@@ -46,6 +46,7 @@ estate_cossacks = {
 		NOT = { government = native }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = regional_veche }
 		is_nomad = no
 		is_colonial_nation = no
 		NOT = { has_reform = celestial_empire }

@@ -1,2 +1,2 @@
-RUR = "countries/Russia.txt"
+RUR = "countries/Russian Republic.txt"
 GNR = "countries/Great Novgorod Republic.txt"

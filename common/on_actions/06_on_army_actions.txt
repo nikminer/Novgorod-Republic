@@ -1,0 +1,173 @@
+
+# country
+on_general_recruited = {
+	add_army_professionalism = 0.01
+
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+				has_reform = council_of_lords
+			}
+		}
+		#question_of_aristocrats
+		if = {
+			limit = {
+				has_country_flag = question_of_aristocrats
+			}
+			if = {
+				limit = {
+					has_reform = nov_enligment_aristocrats_reform
+				}
+				add_faction_influence = {
+					faction = nov_enligment_aristocrats
+					influence = 3
+				}
+			}
+			if = {
+				limit = {
+					has_reform = nov_strong_aristocrats_reform
+				}
+				add_faction_influence = {
+					faction = nov_strong_aristocrats
+					influence = 5
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				not = {	
+					or = {
+						has_country_flag = question_of_aristocrats
+						has_country_flag = new_political_streams
+						has_reform = nov_destroy_aristocrats_reform
+					}
+				}
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = 2
+			}
+		}
+
+		#cassacks
+		if = {
+			limit = {
+				has_country_flag = HasCassacks
+			}
+			add_faction_influence = {
+				faction = nov_cossacks
+				influence = 3
+			}
+		}
+	}
+}
+
+# country
+on_admiral_recruited = {
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+				has_reform = council_of_lords
+			}
+		}
+		if = {
+			limit = { has_country_flag = tradecompany }
+			add_faction_influence = {
+				faction = nov_tradecompany
+				influence = 10
+			}
+		}
+
+		if = {
+			limit = { 
+				not = { 
+					or = {	
+						has_country_flag = tradecompany	
+						has_country_flag = new_political_streams
+					} 
+				} 
+			}
+			add_faction_influence = {
+				faction = mr_traders
+				influence = 5
+			}
+		}
+	}
+}
+
+# country
+on_conquistador_recruited = {
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+			}
+		}
+		if = {
+			limit = { has_country_flag = tradecompany }
+			add_faction_influence = {
+				faction = nov_tradecompany
+				influence = 10
+			}
+		}
+
+		if = {
+			limit = { 
+				not = { 
+					or = {	
+						has_country_flag = tradecompany	
+						has_country_flag = new_political_streams
+					} 
+				} 
+			}
+			add_faction_influence = {
+				faction = mr_traders
+				influence = 5
+			}
+		}
+	}
+}
+
+# country
+on_explorer_recruited = {
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+			}
+		}
+		if = {
+			limit = { has_country_flag = tradecompany }
+			add_faction_influence = {
+				faction = nov_tradecompany
+				influence = 10
+			}
+		}
+
+		if = {
+			limit = { 
+				not = { 
+					or = {	
+						has_country_flag = tradecompany	
+						has_country_flag = new_political_streams
+					} 
+				} 
+			}
+			add_faction_influence = {
+				faction = mr_traders
+				influence = 5
+			}
+		}
+	}
+}

@@ -1,0 +1,160 @@
+# country
+# root = winning country, from = loser country
+on_battle_won_country = {
+	if = {
+		limit = {
+			ROOT = {
+				tag = ALB
+				NOT = { has_country_flag = albanian_victory }
+			}
+			FROM = {
+				tag = TUR
+			}
+		}
+		ROOT = { set_country_flag = albanian_victory }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				religion = jewish
+				has_church_aspect = judaism_purim_teachings_aspect
+			}
+		}
+		ROOT = {
+			add_war_exhaustion = -0.05
+		}
+	}
+
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+				has_reform = council_of_lords
+			}
+		}
+		#question_of_aristocrats
+		if = {
+			limit = {
+				has_country_flag = question_of_aristocrats
+			}
+			if = {
+				limit = {
+					has_reform = nov_enligment_aristocrats_reform
+				}
+				add_faction_influence = {
+					faction = nov_enligment_aristocrats
+					influence = 5
+				}
+			}
+			if = {
+				limit = {
+					has_reform = nov_strong_aristocrats_reform
+				}
+				add_faction_influence = {
+					faction = nov_strong_aristocrats
+					influence = 10
+				}
+			}
+		}
+		if = {
+			limit = {
+				not = {	
+					or = {
+						has_country_flag = question_of_aristocrats
+						has_country_flag = new_political_streams
+						has_reform = nov_destroy_aristocrats_reform
+					}
+				}
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = 5
+			}
+		}
+
+		#cassacks
+		if = {
+			limit = {
+				has_country_flag = HasCassacks
+			}
+			add_faction_influence = {
+				faction = nov_cossacks
+				influence = 5
+			}
+		}
+	}
+}
+
+# country
+# root = loser country, from = winner country
+on_battle_lost_country = {
+	battle_cult_spreading_effect = yes #Scripted effect for fetishist cult mechanics.
+	random_events = {
+		90 = 0
+		10 = friendship_events.1 #Historical Friendship Broken
+	}
+
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+				has_reform = council_of_lords
+			}
+		}
+		#question_of_aristocrats
+		if = {
+			limit = {
+				has_country_flag = question_of_aristocrats
+			}
+			if = {
+				limit = {
+					has_reform = nov_enligment_aristocrats_reform
+				}
+				add_faction_influence = {
+					faction = nov_enligment_aristocrats
+					influence = -5
+				}
+			}
+			if = {
+				limit = {
+					has_reform = nov_strong_aristocrats_reform
+				}
+				add_faction_influence = {
+					faction = nov_strong_aristocrats
+					influence = -15
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				not = {	
+					or = {
+						has_country_flag = question_of_aristocrats
+						has_country_flag = new_political_streams
+						has_reform = nov_destroy_aristocrats_reform
+					}
+				}
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = -10
+			}
+		}
+
+		#cassacks
+		if = {
+			limit = {
+				has_country_flag = HasCassacks
+			}
+			add_faction_influence = {
+				faction = nov_cossacks
+				influence = -10
+			}
+		}
+	}
+}

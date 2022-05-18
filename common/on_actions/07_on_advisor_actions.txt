@@ -1,0 +1,332 @@
+on_pre_adm_advisor_fired = {
+	if = {
+		limit = {
+			has_country_flag = need_to_fire_adm_advisor
+		}
+		set_country_flag = just_fired_adm_advisor
+		remove_advisor_by_category_no_action = ADM
+	}
+
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+			}
+		}
+		#question_of_aristocrats
+
+		if = {
+			limit = {
+				has_country_flag = manufacturing
+			}
+			add_faction_influence = {
+				faction = nov_manufacturing
+				influence = -1
+			}
+		}
+
+		if = {
+			limit = { has_country_flag = capitalist	}
+			add_faction_influence = {
+				faction = nov_capitalist
+				influence = -1
+			}
+		}
+		
+		if = {
+			limit = {
+				not = {
+					or = {
+						has_country_flag = manufacturing
+						has_country_flag = capitalist
+						has_country_flag = new_political_streams
+					}
+				}
+			}
+			add_faction_influence = {
+				faction = mr_guilds
+				influence = -1
+			}
+		}
+	}
+}
+
+
+on_pre_dip_advisor_fired = {
+	if = {
+		limit = {
+			has_country_flag = need_to_fire_dip_advisor
+		}
+		set_country_flag = just_fired_dip_advisor
+		remove_advisor_by_category_no_action = DIP
+	}
+
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+			}
+		}
+		if = {
+			limit = { has_country_flag = tradecompany }
+			add_faction_influence = {
+				faction = nov_tradecompany
+				influence = -1
+			}
+		}
+
+		if = {
+			limit = { 
+				not = { 
+					or = {	
+						has_country_flag = tradecompany	
+						has_country_flag = new_political_streams
+					} 
+				} 
+			}
+			add_faction_influence = {
+				faction = mr_traders
+				influence = -1
+			}
+		}
+	}
+}
+
+# this = country
+on_pre_mil_advisor_fired = {
+	if = {
+		limit = {
+			has_country_flag = need_to_fire_mil_advisor
+		}
+		set_country_flag = just_fired_mil_advisor
+		remove_advisor_by_category_no_action = MIL
+	}
+
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+			}
+		}
+		#question_of_aristocrats
+		if = {
+			limit = {
+				has_country_flag = question_of_aristocrats
+			}
+			if = {
+				limit = {
+					has_reform = nov_enligment_aristocrats_reform
+				}
+				add_faction_influence = {
+					faction = nov_enligment_aristocrats
+					influence = -1
+				}
+			}
+			if = {
+				limit = {
+					has_reform = nov_strong_aristocrats_reform
+				}
+				add_faction_influence = {
+					faction = nov_strong_aristocrats
+					influence = -1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				not = {	
+					or = {
+						has_country_flag = question_of_aristocrats
+						has_country_flag = new_political_streams
+						has_reform = nov_destroy_aristocrats_reform
+					}
+				}
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = -1
+			}
+		}
+
+		#cassacks
+		if = {
+			limit = {
+				has_country_flag = HasCassacks
+			}
+			add_faction_influence = {
+				faction = nov_cossacks
+				influence = -1
+			}
+		}
+	}
+}
+
+
+on_post_adm_advisor_fired = {
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+			}
+		}
+		#question_of_aristocrats
+
+		if = {
+			limit = {
+				has_country_flag = manufacturing
+			}
+			add_faction_influence = {
+				faction = nov_manufacturing
+				influence = -5
+			}
+		}
+
+		if = {
+			limit = { has_country_flag = capitalist	}
+			add_faction_influence = {
+				faction = nov_capitalist
+				influence = -5
+			}
+		}
+		
+		if = {
+			limit = {
+				not = {
+					or = {
+						has_country_flag = manufacturing
+						has_country_flag = capitalist
+						has_country_flag = new_political_streams
+					}
+				}
+			}
+			add_faction_influence = {
+				faction = mr_guilds
+				influence = -5
+			}
+		}
+	}
+}
+
+
+on_post_dip_advisor_fired = {
+	if = {
+		limit = {
+			has_country_flag = need_to_fire_dip_advisor
+		}
+		set_country_flag = just_fired_dip_advisor
+		remove_advisor_by_category_no_action = DIP
+	}
+
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+			}
+		}
+		if = {
+			limit = { has_country_flag = tradecompany }
+			add_faction_influence = {
+				faction = nov_tradecompany
+				influence = -5
+			}
+		}
+
+		if = {
+			limit = { 
+				not = { 
+					or = {	
+						has_country_flag = tradecompany	
+						has_country_flag = new_political_streams
+					} 
+				} 
+			}
+			add_faction_influence = {
+				faction = mr_traders
+				influence = -5
+			}
+		}
+	}
+}
+
+
+on_post_mil_advisor_fired = {
+	if = {
+		limit = {
+			has_country_flag = need_to_fire_mil_advisor
+		}
+		set_country_flag = just_fired_mil_advisor
+		remove_advisor_by_category_no_action = MIL
+	}
+
+	if = {
+		limit = {
+			or = {
+				has_reform = plutocratic_reform
+				has_reform = regional_veche
+				has_reform = veche_republic
+			}
+		}
+		#question_of_aristocrats
+		if = {
+			limit = {
+				has_country_flag = question_of_aristocrats
+			}
+			if = {
+				limit = {
+					has_reform = nov_enligment_aristocrats_reform
+				}
+				add_faction_influence = {
+					faction = nov_enligment_aristocrats
+					influence = -5
+				}
+			}
+			if = {
+				limit = {
+					has_reform = nov_strong_aristocrats_reform
+				}
+				add_faction_influence = {
+					faction = nov_strong_aristocrats
+					influence = -5
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				not = {	
+					or = {
+						has_country_flag = question_of_aristocrats
+						has_country_flag = new_political_streams
+						has_reform = nov_destroy_aristocrats_reform
+					}
+				}
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = -5
+			}
+		}
+
+		#cassacks
+		if = {
+			limit = {
+				has_country_flag = HasCassacks
+			}
+			add_faction_influence = {
+				faction = nov_cossacks
+				influence = -5
+			}
+		}
+	}
+}

@@ -1226,6 +1226,7 @@ rur_3 = {
 						faction_in_power = nov_strong_aristocrats
 						faction_in_power = nov_enligment_aristocrats
 						faction_in_power = nov_cossacks
+						has_reform = council_of_lords
 					}
 					 
 				}
